@@ -1,0 +1,161 @@
+\documentclass{article}
+
+\usepackage[nodisplayskipstretch]{setspace}
+\usepackage[sfdefault,condensed]{roboto}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\urlstyle{same}
+
+\definecolor{deepblue}{rgb}{.1,.2,.3}
+\definecolor{lightgray}{rgb}{.45,.45,.45}
+\definecolor{lightergray}{rgb}{.75,.75,.75}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{
+    \tiny{\color{lightgray}{2017}} \\
+    \scriptsize{Autorizzo il trattamento dei miei dati personali ai sensi della legge sulla privacy 196/03 e successive modifiche e integrazioni.}
+}
+
+
+\begin{document}
+\newgeometry{margin=3cm}
+
+% header
+\begin{minipage}[t]{.25\textwidth}
+	\raisebox
+	{\dimexpr-\height+\ht\strutbox\relax}
+	{\includegraphics[width=1\textwidth]{profile.png}} \hfill \\\\\\\\
+\end{minipage}
+\begin{minipage}[t]{.7\textwidth}
+	\begin{flushright}
+		\vfill \textbf{\huge{Davide Pucci}} \\ \hfill \vfill
+		\textit{\setstretch{1.15}
+			Via Rocca Sinibalda 10, 00199, Roma (RM), Italia \hspace{1mm} \color{lightergray}\faHome\color{black} \\
+			+39 3298580201                                   \hspace{1mm} \color{lightergray}\faPhone\color{black} \\
+			posta@davidepucci.it                             \hspace{1mm} \color{lightergray}\faEnvelope\color{black} \\
+			21/09/1995                                       \hspace{1mm} \color{lightergray}\faCalendar\color{black} \\
+			\url{https://github.com/streambinder}            \hspace{1mm} \color{lightergray}\faGithubSquare\color{black} \\
+			\url{https://linkedin.com/in/davide-pucci}       \hspace{1mm} \color{lightergray}\faLinkedinSquare\color{black} \\
+		}
+	\end{flushright}
+\end{minipage}
+
+% paragraph title
+\textbf{\textcolor{deepblue}{ESPERIENZA}} \\\\ \hfill
+% paragraph content
+\begin{tabular}{ R{3cm} l }
+	\textcolor{lightgray}{10/2015 — in corso} & \begin{tabular}[l]{@{}l@{}}
+	\textbf{Software / DevOps Engineer}, presso \textit{I-Node S.r.l.} \\
+	L'avvio di alcuni progetti web ha reso necessaria l'applicazione della metodologia \\
+	DevOps. Nell'approcciare ad essa, ho imparato a realizzare e/o configurare servizi \\
+	sufficientemente elastici da garantire deployments automatici e periodici, che non \\
+	compromettessero in alcun modo la struttura realizzata e a consolidare le mie \\
+	capacità di sviluppatore. Infatti, l'avvicinamento a questo mondo ha imposto un \\
+	metodo di programmazione che non fosse cieco e interessato soltanto al prodotto \\
+	in fase di realizzazione, ma che tenesse conto dell'ecosistema che gli avrebbe \\
+	fatto da contenitore. \\
+	Nella fattispecie, ho preso dimestichezza con tecnologie quali Jboss / Wildfly, \\
+	il pattern architetturale MVC, i software di build automation Maven e Gradle.
+\end{tabular} \\\\ \hfill
+\textcolor{lightgray}{07/2014 — in corso}   & \begin{tabular}[l]{@{}l@{}}
+\textbf{Systems Engineer}, presso \textit{I-Node S.r.l.} \\
+Ho avuto modo di entrare a contatto con problematice complesse che mi hanno \\
+portato ad una crescita tale da essere in grado di gestire problemi tecnici \\
+interfacciandomi con clienti e/o supporto tecnico di terze parti. \\
+L'eterogeneità del tipo di attivit\`a mi ha permesso di coprire una vasta gamma \\
+di ambiti, dal semplice supporto Tier 1 / Tier 2 alla realizzazione di infrastrutture \\
+informatiche complesse, dal deploy di web/mail server, all'irrobustimento dei \\
+sistemi firewall, dalla configurazione di sistemi di monitoraggio, alla messa in \\
+sicurezza di sistemi, e molto altro.
+\end{tabular} \\\\ \hfill
+\end{tabular}
+
+% paragraph title
+\textbf{\textcolor{deepblue}{EDUCAZIONE}} \\\\ \hfill
+% paragraph content
+\begin{tabular}{ R{3cm} l }
+	\textcolor{lightgray}{2014 — in corso} & \begin{tabular}[l]{@{}l@{}}
+	\textbf{Laurea in Informatica} \\
+	Presso: \textit{La Sapienza, Universit\`a di Roma} \\
+\end{tabular} \\\\ \hfill
+\textcolor{lightgray}{2009 — 2014}  & \begin{tabular}[l]{@{}l@{}}
+\textbf{Diploma di liceo scientifico} \\
+Presso: \textit{Liceo Scientifico Statale Amedeo Avogadro} \\
+Punteggio: 76/100
+\end{tabular} \\\\ \hfill
+\end{tabular}
+
+\newpage
+
+% paragraph title
+\textbf{\textcolor{deepblue}{PROGETTI}} \\\\ \hfill
+% paragraph content
+\begin{tabular}{ R{3cm} l }
+	\textcolor{lightgray}{2017 — in corso} &
+	\begin{tabular}[l]{@{}l@{}} %
+	\textbf{SpaghettiDevops}, \textit{Davide Pucci}, \textit{Marco Panunzio}, \textit{Fabrizio Pietrucci}. \\
+	Insieme a due colleghi universitari ho intrapreso un'attivit\`a di blogging che \\
+	descriva problemi - ed eventuali soluzioni ad essi - in cui \`e possibile imbattersi \\
+	lavorando nel panorama informatico. \\
+	Nasce principalmente per hobby, ma \`e spinto dall'interesse comune di realizzare \\
+	una knowledge base per il generico \textit{IT-addict}.
+\end{tabular} \\\\ \hfill
+\textcolor{lightgray}{2012 — 2014} &
+\begin{tabular}[l]{@{}l@{}} %
+	\textbf{MoltenMotherBoard}, \textit{Davide Pucci}, \textit{Marco Panunzio}, \textit{Giovanni Santini}. \\
+	Per due anni ho sviluppato nel mondo Android sotto il nome di MoltenMotherBoard,                       \\
+	progetto iniziato con altri due colleghi. Con questo team sono stati rilasciati                        \\
+	custom ROMs, kernel e recovery, per diversi terminali, quali il                                        \\
+	Samsung Galaxy Gio GT-S5660, il Samsung Galaxy Pocket GT-S5300,                                        \\
+	il Samsung Galaxy Ace Plus GT-S7500 e l'LG Optimus 4X HD.
+\end{tabular} \\\\ \hfill
+\end{tabular}
+
+% paragraph title
+\textbf{\textcolor{deepblue}{ABILIT\`A IN RETE/SISTEMI}} \\\\ \hfill
+% paragraph content
+\begin{tabular}{ R{4cm} l }
+	\textcolor{lightgray}{Web hosting}       & Apache, Nginx, ISPConfig, Plesk              \\ \hfill
+	\textcolor{lightgray}{Mail hosting}      & Postfix, Courier, Dovecot, Zimbra, Roundcube \\ \hfill
+	\textcolor{lightgray}{Monitoring}        & Nagios, Icinga, NagiosQL, Cacti              \\ \hfill
+	\textcolor{lightgray}{Backup}            & Bacula, Veeam                                \\ \hfill
+	\textcolor{lightgray}{Networking}        & IPTables                                     \\ \hfill
+	\textcolor{lightgray}{SW Deployment}     & OCS Inventory                                \\ \hfill
+	\textcolor{lightgray}{Virtualization}    & VMware vSphere, VirtualBox, Vagrant          \\ \hfill
+	\textcolor{lightgray}{Version Control}   & Git, SVN                                     \\ \hfill
+	\textcolor{lightgray}{Piattaforme cloud} & OwnCloud, NextCloud                          \\ \hfill
+	\textcolor{lightgray}{Operating Systems} & Linux, Android, Windows, Windows Server      \\ \hfill
+\end{tabular}
+
+% paragraph title
+\textbf{\textcolor{deepblue}{ABILIT\`A IN SVILUPPO}} \\\\ \hfill
+% paragraph content
+\begin{tabular}{ R{4cm} l }
+	\textcolor{lightgray}{Base}       & C, GoLang, Ruby, JavaScript \\ \hfill
+	\textcolor{lightgray}{Intermedio} & PHP, LaTeX, MySQL           \\ \hfill
+	\textcolor{lightgray}{Avanzato}   & Java, Python, Bash          \\ \hfill
+\end{tabular}
+
+% paragraph title
+\textbf{\textcolor{deepblue}{LINGUE}} \\\\ \hfill
+% paragraph content
+\begin{tabular}{ R{4cm} l }
+	\textcolor{lightgray}{Italiano} & Madrelingua \\ \hfill
+	\textcolor{lightgray}{Inglese}  & B1          \\ \hfill
+\end{tabular}
+
+\end{document}
