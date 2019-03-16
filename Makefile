@@ -11,4 +11,7 @@ all:
 	);
 
 clean:
-	@rm -rf bin
+	@ ( \
+		find -type f \( -name \*.aux -o -name \*.log -o -name \*.pdf -o -name \*.synctex.gz -o -name \*.toc \) -delete -print; \
+		rm -rfv bin; \
+	);
