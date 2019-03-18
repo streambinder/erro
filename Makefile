@@ -18,7 +18,6 @@ all:
 					else \
 						export $$key="$$value"; \
 					fi; \
-					export $$key="$$value"; \
 				done <<< "$$(jq -r --arg lang "$$lang" -r 'to_entries[] | "\(.key)=\(.value[$$lang])"' < keys.json)"; \
 				tex_lang_variant="$${tex_basename}.$${lang}.tex"; \
 				mush < "$${tex_variant}" > "$${tex_lang_variant}" && \
