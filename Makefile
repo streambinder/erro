@@ -10,8 +10,14 @@ all:
 			for lang in $(LANGUAGES); do \
 				echo "Building $$tex_variant in for $$lang language..."; \
 				while read -r var; do \
-					key="$$(awk -F'=' '{print $$1}' <<< "$$var")"; \
-					value="$$(awk -F'=' '{print $$2}' <<< "$$var")"; \
+					key="$$(awk -F'=' '{print $$1}' <<< "$${var}")"; \
+					value="$$(awk -F'=' '{print $$2}' <<< "$${var}")"; \
+					value_cmd="$$(awk '{print $$1}' <<< "$${value}")"; \
+					if (which "$${value_cmd}" && eval "$${value}") > /dev/null 2>&1; then \
+						export $$key="$$(eval $$value)"; \
+					else \
+						export $$key="$$value"; \
+					fi; \
 					export $$key="$$value"; \
 				done <<< "$$(jq -r --arg lang "$$lang" -r 'to_entries[] | "\(.key)=\(.value[$$lang])"' < keys.json)"; \
 				tex_lang_variant="$${tex_basename}.$${lang}.tex"; \
