@@ -11,7 +11,7 @@ all:
 				echo "Building $$tex_variant in for $$lang language..."; \
 				while read -r var; do \
 					key="$$(awk -F'=' '{print $$1}' <<< "$${var}")"; \
-					value="$$(awk -F'=' '{print $$2}' <<< "$${var}")"; \
+					value="$$(cut -d"=" -f2- <<< "$${var}")"; \
 					value_cmd="$$(awk '{print $$1}' <<< "$${value}")"; \
 					if (which "$${value_cmd}" && eval "$${value}") > /dev/null 2>&1; then \
 						export $$key="$$(eval $$value)"; \
