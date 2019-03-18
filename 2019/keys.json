@@ -1,0 +1,38 @@
+{
+	"footnote": {
+		"it": "Autorizzo il trattamento dei miei dati personali ai sensi della legge sulla privacy 196/03 e successive modifiche e integrazioni",
+		"en": ""
+	},
+	"year": {
+		"it": "2019",
+		"en": "2019"
+	},
+	"experience": {
+		"it": "Esperienza",
+		"en": "Experience"
+	},
+	"education": {
+		"it": "Educazione",
+		"en": "Education"
+	},
+	"projects": {
+		"it": "Progetti",
+		"en": "Projects"
+	},
+	"skills_networking": {
+		"it": "Abilità in rete/sistemi",
+		"en": "Networking/Systems skills"
+	},
+	"skills_development": {
+		"it": "Abilità in sviluppo",
+		"en": "Development skills"
+	},
+	"languages": {
+		"it": "Lingue",
+		"en": "Languages"
+	},
+	"ongoing": {
+		"it": "in corso",
+		"en": "ongoing"
+	}
+}
