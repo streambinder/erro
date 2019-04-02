@@ -4,8 +4,8 @@
 		"en": ""
 	},
 	"year": {
-		"it": "2019",
-		"en": "2019"
+		"it": "date +%Y",
+		"en": "date +%Y"
 	},
 	"experience": {
 		"it": "Esperienza",
@@ -34,5 +34,149 @@
 	"ongoing": {
 		"it": "in corso",
 		"en": "ongoing"
+	},
+	"italy": {
+		"it": "Italia",
+		"en": "Italy"
+	},
+	"rome": {
+		"it": "Roma",
+		"en": "Rome"
+	},
+	"software_consultant": {
+		"it": "Consulente Sviluppatore",
+		"en": "Software Engineering Consultant"
+	},
+	"software_devops_engineer": {
+		"it": "Sviluppatore / DevOps Engineer",
+		"en": "Software / DevOps Engineer"
+	},
+	"systems_engineer": {
+		"it": "Amministratore di sistemi",
+		"en": "Systems Engineer"
+	},
+	"at": {
+		"it": "Presso",
+		"en": "At"
+	},
+	"score": {
+		"it": "Punteggio",
+		"en": "Score"
+	},
+	"university_degree": {
+		"it": "Laurea in Informatica",
+		"en": "Bachelor's degree in Computer Science"
+	},
+	"university_degree_university": {
+		"it": "La Sapienza, Universita' di Roma",
+		"en": "La Sapienza, University of Rome"
+	},
+	"school_degree": {
+		"it": "Diploma di liceo scientifico",
+		"en": "Diploma in scientific studies"
+	},
+	"school_degree_school": {
+		"it": "Liceo Scientifico Statale Amedeo Avogadro",
+		"en": "Liceo Scientifico Statale Amedeo Avogadro"
+	},
+	"experience_kubique": {
+		"it": "La collaborazione tra I-Node S.r.l. e Kubique S.p.A. è stata l'occasione attraverso cui poter affacciarmi nel mondo dello sviluppo di Java EE, poter imparare a gestire requisiti complessi come la necessità di rendere un prodotto tanto elastico quanto stabile ed entrare a contatto con nuovi paradigmi di sviluppo, come la programmazione orientata agli aspetti.",
+		"en": "La collaborazione tra I-Node S.r.l. e Kubique S.p.A. è stata l'occasione attraverso cui poter affacciarmi nel mondo dello sviluppo di Java EE, poter imparare a gestire requisiti complessi come la necessità di rendere un prodotto tanto elastico quanto stabile ed entrare a contatto con nuovi paradigmi di sviluppo, come la programmazione orientata agli aspetti."
+	},
+	"experience_inode_dev": {
+		"it": "Nell'approcciare alle metodologia DevOps, ho imparato a realizzare e/o configurare servizi sufficientemente elastici e solidi da garantirne i deployments automatici e periodici, che non compromettessero in alcun modo la struttura realizzata. L'avvicinamento a questo mondo ha imposto un metodo di programmazione che non fosse cieco e interessato soltanto al prodotto in fase di realizzazione, ma che tenesse conto dell'ecosistema che gli avrebbe fatto da contenitore.",
+		"en": "Nell'approcciare alle metodologia DevOps, ho imparato a realizzare e/o configurare servizi sufficientemente elastici e solidi da garantirne i deployments automatici e periodici, che non compromettessero in alcun modo la struttura realizzata. L'avvicinamento a questo mondo ha imposto un metodo di programmazione che non fosse cieco e interessato soltanto al prodotto in fase di realizzazione, ma che tenesse conto dell'ecosistema che gli avrebbe fatto da contenitore."
+	},
+	"experience_inode_sysadmin": {
+		"it": "Ho avuto modo di entrare a contatto con problematiche complesse che mi hanno portato ad una crescita tale da essere in grado di gestire problemi tecnici interfacciandomi con clienti e/o supporto tecnico di terze parti. L'eterogeneità del tipo di attività mi ha permesso di coprire una vasta gamma di ambiti, dal semplice supporto Tier 1 / Tier 2 alla realizzazione di infrastrutture informatiche complesse, dal deploy di web/mail server, all'irrobustimento dei sistemi firewall, dalla configurazione di sistemi di monitoraggio, alla messa in sicurezza di sistemi, e molto altro.",
+		"en": "Ho avuto modo di entrare a contatto con problematiche complesse che mi hanno portato ad una crescita tale da essere in grado di gestire problemi tecnici interfacciandomi con clienti e/o supporto tecnico di terze parti. L'eterogeneità del tipo di attività mi ha permesso di coprire una vasta gamma di ambiti, dal semplice supporto Tier 1 / Tier 2 alla realizzazione di infrastrutture informatiche complesse, dal deploy di web/mail server, all'irrobustimento dei sistemi firewall, dalla configurazione di sistemi di monitoraggio, alla messa in sicurezza di sistemi, e molto altro."
+	},
+	"project_spaghettidevops": {
+		"it": "Insieme a due colleghi universitari ho intrapreso un'attività di blogging che descriva problemi - ed eventuali soluzioni ad essi - in cui è possibile imbattersi lavorando nel panorama informatico. Nasce principalmente per hobby, ma è spinto dall'interesse comune di realizzare una knowledge base per il generico lavoratore nel campo IT.",
+		"en": "Insieme a due colleghi universitari ho intrapreso un'attività di blogging che descriva problemi - ed eventuali soluzioni ad essi - in cui è possibile imbattersi lavorando nel panorama informatico. Nasce principalmente per hobby, ma è spinto dall'interesse comune di realizzare una knowledge base per il generico lavoratore nel campo IT."
+	},
+	"project_moltenmotherboard": {
+		"it": "Per due anni ho sviluppato nel mondo Android sotto il nome di MoltenMotherBoard, progetto iniziato con altri due colleghi. Con questo team sono stati rilasciati custom ROMs, kernel e recovery, per diversi terminali, quali il Samsung Galaxy Gio GT-S5660, il Samsung Galaxy Pocket GT-S5300, il Samsung Galaxy Ace Plus GT-S7500 e l'LG Optimus 4X HD.",
+		"en": "Per due anni ho sviluppato nel mondo Android sotto il nome di MoltenMotherBoard, progetto iniziato con altri due colleghi. Con questo team sono stati rilasciati custom ROMs, kernel e recovery, per diversi terminali, quali il Samsung Galaxy Gio GT-S5660, il Samsung Galaxy Pocket GT-S5300, il Samsung Galaxy Ace Plus GT-S7500 e l'LG Optimus 4X HD."
+	},
+	"skill_networking_webhosting": {
+		"it": "Hosting web",
+		"en": "Web hosting"
+	},
+	"skill_networking_mailhosting": {
+		"it": "Hosting email",
+		"en": "Mail hosting"
+	},
+	"skill_networking_filehosting": {
+		"it": "Hosting file",
+		"en": "File hosting"
+	},
+	"skill_networking_dbms": {
+		"it": "DBMS",
+		"en": "DBMS"
+	},
+	"skill_networking_monitoring": {
+		"it": "Monitoraggio",
+		"en": "Monitoring"
+	},
+	"skill_networking_backup": {
+		"it": "Backup",
+		"en": "Backup"
+	},
+	"skill_networking_networking": {
+		"it": "Rete",
+		"en": "Networking"
+	},
+	"skill_networking_remotecontrol": {
+		"it": "Controllo remoto",
+		"en": "Remote control"
+	},
+	"skill_networking_automation": {
+		"it": "Automazione di sviluppo",
+		"en": "Automation tools"
+	},
+	"skill_networking_virtualization": {
+		"it": "Virtualizzazione",
+		"en": "Virtualization"
+	},
+	"skill_networking_vcs": {
+		"it": "Controllo versione",
+		"en": "Version control"
+	},
+	"skill_networking_cloud": {
+		"it": "Piattaforme cloud",
+		"en": "Cloud platforms"
+	},
+	"skill_networking_antivirus": {
+		"it": "Antivirus",
+		"en": "Antivirus"
+	},
+	"skill_networking_os": {
+		"it": "Sistemi operativi",
+		"en": "Operating Systems"
+	},
+	"level_base": {
+		"it": "Base",
+		"en": "Basic"
+	},
+	"level_intermediate": {
+		"it": "Intermedio",
+		"en": "Intermediate"
+	},
+	"level_advanced": {
+		"it": "Avanzato",
+		"en": "Advanced"
+	},
+	"lang_italian": {
+		"it": "Italiano",
+		"en": "Italian"
+	},
+	"lang_english": {
+		"it": "Inglese",
+		"en": "English"
+	},
+	"native_proficiency": {
+		"it": "Madrelingua",
+		"en": "Native proficiency"
 	}
 }
