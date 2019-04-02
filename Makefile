@@ -30,5 +30,8 @@ all:
 clean:
 	@ ( \
 		find -type f \( -name \*.aux -o -name \*.log -o -name \*.out -o -name \*.pdf -o -name \*.synctex.gz -o -name \*.toc \) -delete -print; \
+		for lang in $(LANGUAGES); do \
+			find -type f -name \*.$$lang.tex -delete -print; \
+		done; \
 		rm -rfv bin; \
 	);
