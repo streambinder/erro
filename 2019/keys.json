@@ -47,13 +47,21 @@
 		"it": "Consulente Sviluppatore",
 		"en": "Software Engineering Consultant"
 	},
+	"cofounder": {
+		"it": "Co-fondatore",
+		"en": "Co-founder"
+	},
 	"software_devops_engineer": {
-		"it": "Sviluppatore / DevOps Engineer",
+		"it": "Sviluppatore / Ingegnere DevOps",
 		"en": "Software / DevOps Engineer"
 	},
-	"systems_engineer": {
+	"system_engineer": {
 		"it": "Amministratore di sistemi",
-		"en": "Systems Engineer"
+		"en": "System Engineer"
+	},
+	"and": {
+		"it": "e",
+		"en": "and"
 	},
 	"at": {
 		"it": "Presso",
@@ -80,24 +88,28 @@
 		"en": "Liceo Scientifico Statale Amedeo Avogadro"
 	},
 	"experience_kubique": {
-		"it": "La collaborazione tra I-Node S.r.l. e Kubique S.p.A. è stata l'occasione attraverso cui poter affacciarmi nel mondo dello sviluppo di Java EE, poter imparare a gestire requisiti complessi come la necessità di rendere un prodotto tanto elastico quanto stabile ed entrare a contatto con nuovi paradigmi di sviluppo, come la programmazione orientata agli aspetti.",
-		"en": "The partnership between I-Node S.r.l. and Kubique S.p.A. has been the opportunity to land in the world of Java EE development, to learn how to handle complex requirements such as the need of both elasticity and solidity and to get in touch with new development paradigms, such as the aspect oriented programming."
+		"it": "Ricoprire questo ruolo mi ha permesso di entrare nel mondo dello sviluppo di Java EE, contesto in cui ho imparato a gestire requisiti complessi come quelli richiesti per progetti coinvolti nell'ecosistema dell'Open Banking ed interfacciarmi con nuovi paradigmi di sviluppo, come la programmazione orientata agli aspetti.",
+		"en": "I got the opportunity to work as software consultant in the world of Java EE development, fertile place in which to learn how to handle complex requirements such as the ones requested in projects involved in the Open Banking ecosystem and to get in touch with new development paradigms, such as the aspect oriented programming."
+	},
+	"experience_cellula": {
+		"it": "Ho fondato, insieme a sei soci, la società Cellula S.r.l. con l'intenzione, ancora attuale, di realizzare il desiderio di creare un mio progetto, su cui potermi spendere e realizzare.",
+		"en": "I founded, along with six co-founders, Cellula S.r.l. company. This was intended to fullfill my - still alive - desire to build my own project, getting personally involved in its construction phases, spending time over it and keeping it growing."
 	},
 	"experience_inode_dev": {
-		"it": "Nell'approcciare alle metodologia DevOps, ho imparato a realizzare e/o configurare servizi sufficientemente elastici e solidi da garantirne i deployments automatici e periodici, che non compromettessero in alcun modo la struttura realizzata. L'avvicinamento a questo mondo ha imposto un metodo di programmazione che non fosse cieco e interessato soltanto al prodotto in fase di realizzazione, ma che tenesse conto dell'ecosistema che gli avrebbe fatto da contenitore.",
-		"en": "The start of few web projects brought the DevOps methodology into the company. Thanks to that, I learned to build and/or configure elastic services that could ensure automatic and periodic deployments, that could not compromuise the structure in any way and to consolidate my programming skills. In fact, the approach to this world tought me to have follow a method while coding, to not do it blindly and interested only to the realizing product, a method that could consider the ecosystem that would have contained it."
+		"it": "Ho imparato a realizzare e/o configurare servizi sufficientemente elastici e solidi da garantirne i deployments automatici, che non compromettessero in alcun modo la struttura realizzata. L'avvicinamento a questo mondo ha imposto un metodo di programmazione che non fosse cieco e interessato soltanto al prodotto in fase di realizzazione, ma che tenesse conto dell'ecosistema che gli avrebbe fatto da contenitore.",
+		"en": "I learned to build and/or configure elastic services that could ensure automatic and periodic deployments, that could not compromuise the structure in any way and to consolidate my programming skills. In fact, the approach to this world tought me to have follow a method while coding, to not do it blindly and interested only to the realizing product, a method that could consider the ecosystem that would have contained it."
 	},
 	"experience_inode_sysadmin": {
-		"it": "Ho avuto modo di entrare a contatto con problematiche complesse che mi hanno portato ad una crescita tale da essere in grado di gestire problemi tecnici interfacciandomi con clienti e/o supporto tecnico di terze parti. L'eterogeneità del tipo di attività mi ha permesso di coprire una vasta gamma di ambiti, dal semplice supporto Tier 1 / Tier 2 alla realizzazione di infrastrutture informatiche complesse, dal deploy di web/mail server, all'irrobustimento dei sistemi firewall, dalla configurazione di sistemi di monitoraggio, alla messa in sicurezza di sistemi, e molto altro.",
-		"en": "I got familiar with complex issues that made me grow in a way to get able to handle technical problems interfacing with customers and/or third-party technical support. The heterogeneity of the tasks made me cover a wide variety of areas, starting from the simple Tier 1 / Tier 2 support up to the building of complex infrastructures, from web/mail servers deployments to the strengthening of firewall systems, from the monitoring systems configurations to the securing of systems, and more."
+		"it": "Problematiche complesse di rete e sistemi mi hanno insegnato a gestire problemi tecnici interfacciandomi con clienti e/o supporto tecnico di terze parti, ricoprendo il ruolo di supporto Tier 1 / Tier 2, realizzando ed amministrando infrastrutture informatiche complesse.",
+		"en": "I got familiar with interfacing with customers and/or third-party technical support, covering the role of Tier 1 / Tier 2 support, building and administering complex infrastructures."
 	},
 	"project_spaghettidevops": {
-		"it": "Insieme a due colleghi universitari ho intrapreso un'attività di blogging che descriva problemi - ed eventuali soluzioni ad essi - in cui è possibile imbattersi lavorando nel panorama informatico. Nasce principalmente per hobby, ma è spinto dall'interesse comune di realizzare una knowledge base per il generico lavoratore nel campo IT.",
-		"en": "Together with two university colleagues, I started a blogging activity that could describe problems - along with solutions, eventually - in which anyone in the IT panorama could come across. It was born as a hobby, but is driven by the common interest to realize a knowledge base where any IT-addict could get helped."
+		"it": "Insieme a due colleghi universitari ho intrapreso un'attività di blogging per la descrizione di problemi e soluzioni, utili per chi lavora nel panorama informatico. Nato principalmente per hobby, è stato spinto dall'interesse comune di realizzare una knowledge base per il generico lavoratore nel campo IT.",
+		"en": "Together with two university colleagues, I started a blogging activity that could describe problems and solutions in which anyone in the IT panorama could come across. It was born as a hobby, but was driven by the common interest to realize a knowledge base where any IT worker could get helped."
 	},
 	"project_moltenmotherboard": {
-		"it": "Per due anni ho sviluppato nel mondo Android sotto il nome di MoltenMotherBoard, progetto iniziato con altri due colleghi. Con questo team sono stati rilasciati custom ROMs, kernel e recovery, per diversi terminali, quali il Samsung Galaxy Gio GT-S5660, il Samsung Galaxy Pocket GT-S5300, il Samsung Galaxy Ace Plus GT-S7500 e l'LG Optimus 4X HD.",
-		"en": "For two years I built Android systems under the name of MoltenMotherBoard, with two colleagues. This team released custom ROMs, kernels and recoveries, for several devices, as Samsung Galaxy Gio GT-S5660, Samsung Galaxy Pocket GT-S5300, Samsung Galaxy Ace Plus GT-S7500 and LG Optimus 4X HD."
+		"it": "Per due anni ho sviluppato nel mondo Android sotto il nome di MoltenMotherBoard, progetto iniziato con altri due colleghi. Con questo team sono stati rilasciati custom ROMs, kernel e recovery, per diversi terminali, quali il Samsung Galaxy Gio GT-S5660, il Samsung Galaxy Pocket GT-S5300, il Samsung Galaxy Ace Plus GT-S7500 e l'LG Optimus 4X HD. Ho raggiunto, per quest'ultimo smartphone, il ruolo di manutentore ufficiale del codice sorgente nel team CyanogenMod.",
+		"en": "For two years I built Android systems under the name of MoltenMotherBoard, with two colleagues. This team released custom ROMs, kernels and recoveries, for several devices, such as Samsung Galaxy Gio GT-S5660, Samsung Galaxy Pocket GT-S5300, Samsung Galaxy Ace Plus GT-S7500 and LG Optimus 4X HD. The last one let me reach the role of official mantainer of its source code in the CyanogenMod team."
 	},
 	"skill_networking_webhosting": {
 		"it": "Hosting web",
