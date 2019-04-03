@@ -25,6 +25,7 @@ all:
 				rm -f "$${tex_lang_variant}"; \
 			done; \
 		done; \
+		cd ../bin && find -maxdepth 1 -type f ! -name \*.pdf -delete; \
 	);
 
 clean:
