@@ -199,8 +199,8 @@
 		"it": "Madrelingua",
 		"en": "Native proficiency"
 	},
-	"toefl_certified": {
-		"it": "certificato TOEFL",
-		"en": "TOEFL certified"
+	"toefl_certification": {
+		"it": "Certificazione TOEFL",
+		"en": "TOEFL certification"
 	}
 }
