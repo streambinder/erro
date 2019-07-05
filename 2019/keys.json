@@ -71,6 +71,14 @@
 		"it": "Punteggio",
 		"en": "Score"
 	},
+	"master_degree": {
+		"it": "Master in Sicurezza e Ingegneria delle Reti",
+		"en": "Security and Network Engineering master"
+	},
+	"master_degree_university": {
+		"it": "UvA, Università di Amsterdam",
+		"en": "UvA, University of Amsterdam"
+	},
 	"university_degree": {
 		"it": "Laurea in Informatica",
 		"en": "Bachelor's degree in Computer Science"
@@ -96,8 +104,8 @@
 		"en": "I founded, along with six co-founders, Cellula S.r.l. company. This was intended to fullfill my - still alive - desire to build my own project, getting personally involved in its construction phases, spending time over it and keeping it growing."
 	},
 	"experience_inode_dev": {
-		"it": "Ho imparato a realizzare e/o configurare servizi sufficientemente elastici e solidi da garantirne i deployments automatici, che non compromettessero in alcun modo la struttura realizzata. L'avvicinamento a questo mondo ha imposto un metodo di programmazione che non fosse cieco e interessato soltanto al prodotto in fase di realizzazione, ma che tenesse conto dell'ecosistema che gli avrebbe fatto da contenitore.",
-		"en": "I learned to build and/or configure elastic services that could ensure automatic and periodic deployments, that could not compromuise the structure in any way and to consolidate my programming skills. In fact, the approach to this world tought me to have follow a method while coding, to not do it blindly and interested only to the realizing product, a method that could consider the ecosystem that would have contained it."
+		"it": "Ho imparato a dare centrale importanza ad elasticità e solidità nello sviluppo e a realizzare strumenti al fine di garantire l'automazione dei deployments.",
+		"en": "I learned to give importance to the elasticity and solidity of projects I followed as a developer and to realize tools to ensure automatic deployments."
 	},
 	"experience_inode_sysadmin": {
 		"it": "Problematiche complesse di rete e sistemi mi hanno insegnato a gestire problemi tecnici interfacciandomi con clienti e/o supporto tecnico di terze parti, ricoprendo il ruolo di supporto Tier 1 / Tier 2, realizzando ed amministrando infrastrutture informatiche complesse.",
