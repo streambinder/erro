@@ -190,5 +190,9 @@
 	"native_proficiency": {
 		"it": "Madrelingua",
 		"en": "Native proficiency"
+	},
+	"toefl_certified": {
+		"it": "certificato TOEFL",
+		"en": "TOEFL certified"
 	}
 }
