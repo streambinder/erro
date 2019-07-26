@@ -25,8 +25,14 @@
 	"url_github": {
 		"default": "https://github.com/streambinder"
 	},
+	"url_github_abbr": {
+		"default": "github.com/streambinder"
+	},
 	"url_linkedin": {
 		"default": "https://linkedin.com/in/davide-pucci"
+	},
+	"url_linkedin_abbr": {
+		"default": "linkedin.com/in/davide-pucci"
 	},
 	"nationality": {
 		"it": "Italiano",
