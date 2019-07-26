@@ -18,7 +18,7 @@ all:
 					else \
 						export $$key="$$value"; \
 					fi; \
-				done <<< "$$(jq -r --arg lang "$$lang" -r 'to_entries[] | "\(.key)=\(.value[$$lang])"' < keys.json)"; \
+				done <<< "$$(jq -r --arg lang "$$lang" -r 'to_entries[] | "\(.key)=\(.value[$$lang] // .value.default)"' < keys.json)"; \
 				tex_lang_variant="$${tex_basename}.$${lang}.tex"; \
 				mush < "$${tex_variant}" > "$${tex_lang_variant}" && \
 				pdflatex -synctex=1 -interaction=nonstopmode -output-directory=../bin "$${tex_lang_variant}" 2>&1 > /dev/null; \
