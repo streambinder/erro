@@ -21,7 +21,7 @@ all:
 				done <<< "$$(jq -r --arg lang "$$lang" -r 'to_entries[] | "\(.key)=\(.value[$$lang])"' < keys.json)"; \
 				tex_lang_variant="$${tex_basename}.$${lang}.tex"; \
 				mush < "$${tex_variant}" > "$${tex_lang_variant}" && \
-				pdflatex -synctex=1 -interaction=nonstopmode -output-directory=../bin "$${tex_lang_variant}" 2>&1 > /dev/null && \
+				pdflatex -synctex=1 -interaction=nonstopmode -output-directory=../bin "$${tex_lang_variant}" 2>&1 > /dev/null; \
 				rm -f "$${tex_lang_variant}"; \
 			done; \
 		done; \
