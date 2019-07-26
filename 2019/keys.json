@@ -4,36 +4,29 @@
 		"en": "english"
 	},
 	"name": {
-		"it": "Davide Pucci",
-		"en": "Davide Pucci"
+		"default": "Davide Pucci"
 	},
 	"address": {
-		"it": "Via Rocca Sinibalda 10, 00199",
-		"en": "Via Rocca Sinibalda 10, 00199"
+		"default": "Via Rocca Sinibalda 10, 00199"
 	},
 	"phone": {
-		"it": "+39 3298580201",
-		"en": "+39 3298580201"
+		"default": "+39 3298580201"
 	},
 	"email": {
-		"it": "posta@davidepucci.it",
-		"en": "posta@davidepucci.it"
+		"default": "posta@davidepucci.it"
 	},
 	"birth_date": {
 		"it": "21 Settembre 1995",
 		"en": "21th September 1995"
 	},
 	"url_personal": {
-		"it": "https://davidepucci.it",
-		"en": "https://davidepucci.it"
+		"default": "https://davidepucci.it"
 	},
 	"url_github": {
-		"it": "https://github.com/streambinder",
-		"en": "https://github.com/streambinder"
+		"default": "https://github.com/streambinder"
 	},
 	"url_linkedin": {
-		"it": "https://linkedin.com/in/davide-pucci",
-		"en": "https://linkedin.com/in/davide-pucci"
+		"default": "https://linkedin.com/in/davide-pucci"
 	},
 	"nationality": {
 		"it": "Italiano",
@@ -48,8 +41,7 @@
 		"en": ""
 	},
 	"year": {
-		"it": "date +%Y",
-		"en": "date +%Y"
+		"default": "date +%Y"
 	},
 	"experience": {
 		"it": "Esperienza",
@@ -124,16 +116,13 @@
 		"en": "Score"
 	},
 	"company_kubique": {
-		"it": "Kubique S.p.A.",
-		"en": "Kubique S.p.A."
+		"default": "Kubique S.p.A."
 	},
 	"company_cellula": {
-		"it": "Cellula S.r.l.",
-		"en": "Cellula S.r.l."
+		"default": "Cellula S.r.l."
 	},
 	"company_inode": {
-		"it": "I-node S.r.l.",
-		"en": "I-node S.r.l."
+		"default": "I-node S.r.l."
 	},
 	"master_degree": {
 		"it": "Master in Sicurezza e Ingegneria delle Reti",
@@ -152,8 +141,7 @@
 		"en": "La Sapienza, University of Rome"
 	},
 	"university_degree_score": {
-		"it": "92/110",
-		"en": "92/110"
+		"default": "92/110"
 	},
 	"school_degree": {
 		"it": "Diploma di liceo scientifico",
@@ -164,8 +152,7 @@
 		"en": "Liceo Scientifico Statale Amedeo Avogadro"
 	},
 	"school_degree_score": {
-		"it": "76/100",
-		"en": "76/100"
+		"default": "76/100"
 	},
 	"experience_kubique": {
 		"it": "Ricoprire questo ruolo mi ha permesso di entrare nel mondo dello sviluppo di Java EE, contesto in cui ho imparato a gestire requisiti complessi come quelli richiesti per progetti coinvolti nell'ecosistema dell'Open Banking ed interfacciarmi con nuovi paradigmi di sviluppo, come la programmazione orientata agli aspetti.",
@@ -196,112 +183,95 @@
 		"en": "Web hosting"
 	},
 	"skill_networking_webhosting_entries": {
-		"it": "Apache, Nginx, ISPConfig, Plesk",
-		"en": "Apache, Nginx, ISPConfig, Plesk"
+		"default": "Apache, Nginx, ISPConfig, Plesk"
 	},
 	"skill_networking_mailhosting": {
 		"it": "Hosting email",
 		"en": "Mail hosting"
 	},
 	"skill_networking_mailhosting_entries": {
-		"it": "Postfix, Courier, Dovecot, Zimbra, Roundcube",
-		"en": "Postfix, Courier, Dovecot, Zimbra, Roundcube"
+		"default": "Postfix, Courier, Dovecot, Zimbra, Roundcube"
 	},
 	"skill_networking_filehosting": {
 		"it": "Hosting file",
 		"en": "File hosting"
 	},
 	"skill_networking_filehosting_entries": {
-		"it": "VSFTP, SFTP",
-		"en": "VSFTP, SFTP"
+		"default": "VSFTP, SFTP"
 	},
 	"skill_networking_dbms": {
-		"it": "DBMS",
-		"en": "DBMS"
+		"default": "DBMS"
 	},
 	"skill_networking_dbms_entries": {
-		"it": "MySQL / MariaDB, PostgreSQL, LightDB, OrientDB",
-		"en": "MySQL / MariaDB, PostgreSQL, LightDB, OrientDB"
+		"default": "MySQL / MariaDB, PostgreSQL, LightDB, OrientDB"
 	},
 	"skill_networking_monitoring": {
 		"it": "Monitoraggio",
 		"en": "Monitoring"
 	},
 	"skill_networking_monitoring_entries": {
-		"it": "Nagios, Icinga(2), NagiosQL, Cacti, Netdata",
-		"en": "Nagios, Icinga(2), NagiosQL, Cacti, Netdata"
+		"default": "Nagios, Icinga(2), NagiosQL, Cacti, Netdata"
 	},
 	"skill_networking_backup": {
-		"it": "Backup",
-		"en": "Backup"
+		"default": "Backup"
 	},
 	"skill_networking_backup_entries": {
-		"it": "Bacula, Veeam",
-		"en": "Bacula, Veeam"
+		"default": "Bacula, Veeam"
 	},
 	"skill_networking_networking": {
 		"it": "Rete",
 		"en": "Networking"
 	},
 	"skill_networking_networking_entries": {
-		"it": "IPTables, IPsec, OpenVPN, GateProtect",
-		"en": "IPTables, IPsec, OpenVPN, GateProtect"
+		"default": "IPTables, IPsec, OpenVPN, GateProtect"
 	},
 	"skill_networking_remotecontrol": {
 		"it": "Controllo remoto",
 		"en": "Remote control"
 	},
 	"skill_networking_remotecontrol_entries": {
-		"it": "Samba(4), NFSv4, Kerberos",
-		"en": "Samba(4), NFSv4, Kerberos"
+		"default": "Samba(4), NFSv4, Kerberos"
 	},
 	"skill_networking_automation": {
 		"it": "Automazione di sviluppo",
 		"en": "Automation tools"
 	},
 	"skill_networking_automation_entries": {
-		"it": "Make, Maven, Gradle",
-		"en": "Make, Maven, Gradle"
+		"default": "Make, Maven, Gradle"
 	},
 	"skill_networking_virtualization": {
 		"it": "Virtualizzazione",
 		"en": "Virtualization"
 	},
 	"skill_networking_virtualization_entries": {
-		"it": "VMware vSphere, VirtualBox, Vagrant, Docker",
-		"en": "VMware vSphere, VirtualBox, Vagrant, Docker"
+		"default": "VMware vSphere, VirtualBox, Vagrant, Docker"
 	},
 	"skill_networking_vcs": {
 		"it": "Controllo versione",
 		"en": "Version control"
 	},
 	"skill_networking_vcs_entries": {
-		"it": "Git, SVN",
-		"en": "Git, SVN"
+		"default": "Git, SVN"
 	},
 	"skill_networking_cloud": {
 		"it": "Piattaforme cloud",
 		"en": "Cloud platforms"
 	},
 	"skill_networking_cloud_entries": {
-		"it": "OwnCloud, NextCloud",
-		"en": "OwnCloud, NextCloud"
+		"default": "OwnCloud, NextCloud"
 	},
 	"skill_networking_antivirus": {
-		"it": "Antivirus",
-		"en": "Antivirus"
+		"default": "Antivirus"
 	},
 	"skill_networking_antivirus_entries": {
-		"it": "Sophos Enterprise Console, Sophos Endpoint Antivirus, G Data",
-		"en": "Sophos Enterprise Console, Sophos Endpoint Antivirus, G Data"
+		"default": "Sophos Enterprise Console, Sophos Endpoint Antivirus, G Data"
 	},
 	"skill_networking_os": {
 		"it": "Sistemi operativi",
 		"en": "Operating Systems"
 	},
 	"skill_networking_os_entries": {
-		"it": "Linux, Android, Windows, Windows Server",
-		"en": "Linux, Android, Windows, Windows Server"
+		"default": "Linux, Android, Windows, Windows Server"
 	},
 	"level_base": {
 		"it": "Base",
@@ -316,24 +286,19 @@
 		"en": "Advanced"
 	},
 	"skills_development_base": {
-		"it": "Ruby, MySQL",
-		"en": "Ruby, MySQL"
+		"default": "Ruby, MySQL"
 	},
 	"skills_development_intermediate": {
-		"it": "C, PHP, LaTeX, JavaScript/TypeScript, ASM MIPS",
-		"en": "C, PHP, LaTeX, JavaScript/TypeScript, ASM MIPS"
+		"default": "C, PHP, LaTeX, JavaScript/TypeScript, ASM MIPS"
 	},
 	"skills_development_advanced": {
-		"it": "Java, Python, Bash, GoLang",
-		"en": "Java, Python, Bash, GoLang"
+		"default": "Java, Python, Bash, GoLang"
 	},
 	"skills_development_frameworks": {
-		"it": "Frameworks",
-		"en": "Frameworks"
+		"default": "Frameworks"
 	},
 	"skills_development_frameworks_entries": {
-		"it": "Laravel, Spring Boot, Ionic, Flask",
-		"en": "Laravel, Spring Boot, Ionic, Flask"
+		"default": "Laravel, Spring Boot, Ionic, Flask"
 	},
 	"lang_italian": {
 		"it": "Italiano",
