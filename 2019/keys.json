@@ -1,4 +1,48 @@
 {
+	"language": {
+		"it": "italian",
+		"en": "english"
+	},
+	"name": {
+		"it": "Davide Pucci",
+		"en": "Davide Pucci"
+	},
+	"address": {
+		"it": "Via Rocca Sinibalda 10, 00199",
+		"en": "Via Rocca Sinibalda 10, 00199"
+	},
+	"phone": {
+		"it": "+39 3298580201",
+		"en": "+39 3298580201"
+	},
+	"email": {
+		"it": "posta@davidepucci.it",
+		"en": "posta@davidepucci.it"
+	},
+	"birth_date": {
+		"it": "21 Settembre 1995",
+		"en": "21th September 1995"
+	},
+	"url_personal": {
+		"it": "https://davidepucci.it",
+		"en": "https://davidepucci.it"
+	},
+	"url_github": {
+		"it": "https://github.com/streambinder",
+		"en": "https://github.com/streambinder"
+	},
+	"url_linkedin": {
+		"it": "https://linkedin.com/in/davide-pucci",
+		"en": "https://linkedin.com/in/davide-pucci"
+	},
+	"nationality": {
+		"it": "Italiano",
+		"en": "Italian"
+	},
+	"gender": {
+		"it": "Maschio",
+		"en": "Male"
+	},
 	"footnote": {
 		"it": "Autorizzo il trattamento dei miei dati personali ai sensi della legge sulla privacy 196/03 e successive modifiche e integrazioni",
 		"en": ""
@@ -18,6 +62,10 @@
 	"projects": {
 		"it": "Progetti",
 		"en": "Projects"
+	},
+	"skills": {
+		"it": "Abilità",
+		"en": "Skills"
 	},
 	"skills_networking": {
 		"it": "Abilità in rete/sistemi",
@@ -42,6 +90,10 @@
 	"rome": {
 		"it": "Roma",
 		"en": "Rome"
+	},
+	"rm": {
+		"it": "RM",
+		"en": "RM"
 	},
 	"software_consultant": {
 		"it": "Consulente Sviluppatore",
@@ -71,6 +123,18 @@
 		"it": "Punteggio",
 		"en": "Score"
 	},
+	"company_kubique": {
+		"it": "Kubique S.p.A.",
+		"en": "Kubique S.p.A."
+	},
+	"company_cellula": {
+		"it": "Cellula S.r.l.",
+		"en": "Cellula S.r.l."
+	},
+	"company_inode": {
+		"it": "I-node S.r.l.",
+		"en": "I-node S.r.l."
+	},
 	"master_degree": {
 		"it": "Master in Sicurezza e Ingegneria delle Reti",
 		"en": "Security and Network Engineering master"
@@ -87,6 +151,10 @@
 		"it": "La Sapienza, Universita' di Roma",
 		"en": "La Sapienza, University of Rome"
 	},
+	"university_degree_score": {
+		"it": "92/110",
+		"en": "92/110"
+	},
 	"school_degree": {
 		"it": "Diploma di liceo scientifico",
 		"en": "Diploma in scientific studies"
@@ -94,6 +162,10 @@
 	"school_degree_school": {
 		"it": "Liceo Scientifico Statale Amedeo Avogadro",
 		"en": "Liceo Scientifico Statale Amedeo Avogadro"
+	},
+	"school_degree_score": {
+		"it": "76/100",
+		"en": "76/100"
 	},
 	"experience_kubique": {
 		"it": "Ricoprire questo ruolo mi ha permesso di entrare nel mondo dello sviluppo di Java EE, contesto in cui ho imparato a gestire requisiti complessi come quelli richiesti per progetti coinvolti nell'ecosistema dell'Open Banking ed interfacciarmi con nuovi paradigmi di sviluppo, come la programmazione orientata agli aspetti.",
@@ -123,57 +195,113 @@
 		"it": "Hosting web",
 		"en": "Web hosting"
 	},
+	"skill_networking_webhosting_entries": {
+		"it": "Apache, Nginx, ISPConfig, Plesk",
+		"en": "Apache, Nginx, ISPConfig, Plesk"
+	},
 	"skill_networking_mailhosting": {
 		"it": "Hosting email",
 		"en": "Mail hosting"
+	},
+	"skill_networking_mailhosting_entries": {
+		"it": "Postfix, Courier, Dovecot, Zimbra, Roundcube",
+		"en": "Postfix, Courier, Dovecot, Zimbra, Roundcube"
 	},
 	"skill_networking_filehosting": {
 		"it": "Hosting file",
 		"en": "File hosting"
 	},
+	"skill_networking_filehosting_entries": {
+		"it": "VSFTP, SFTP",
+		"en": "VSFTP, SFTP"
+	},
 	"skill_networking_dbms": {
 		"it": "DBMS",
 		"en": "DBMS"
+	},
+	"skill_networking_dbms_entries": {
+		"it": "MySQL / MariaDB, PostgreSQL, LightDB, OrientDB",
+		"en": "MySQL / MariaDB, PostgreSQL, LightDB, OrientDB"
 	},
 	"skill_networking_monitoring": {
 		"it": "Monitoraggio",
 		"en": "Monitoring"
 	},
+	"skill_networking_monitoring_entries": {
+		"it": "Nagios, Icinga(2), NagiosQL, Cacti, Netdata",
+		"en": "Nagios, Icinga(2), NagiosQL, Cacti, Netdata"
+	},
 	"skill_networking_backup": {
 		"it": "Backup",
 		"en": "Backup"
+	},
+	"skill_networking_backup_entries": {
+		"it": "Bacula, Veeam",
+		"en": "Bacula, Veeam"
 	},
 	"skill_networking_networking": {
 		"it": "Rete",
 		"en": "Networking"
 	},
+	"skill_networking_networking_entries": {
+		"it": "IPTables, IPsec, OpenVPN, GateProtect",
+		"en": "IPTables, IPsec, OpenVPN, GateProtect"
+	},
 	"skill_networking_remotecontrol": {
 		"it": "Controllo remoto",
 		"en": "Remote control"
+	},
+	"skill_networking_remotecontrol_entries": {
+		"it": "Samba(4), NFSv4, Kerberos",
+		"en": "Samba(4), NFSv4, Kerberos"
 	},
 	"skill_networking_automation": {
 		"it": "Automazione di sviluppo",
 		"en": "Automation tools"
 	},
+	"skill_networking_automation_entries": {
+		"it": "Make, Maven, Gradle",
+		"en": "Make, Maven, Gradle"
+	},
 	"skill_networking_virtualization": {
 		"it": "Virtualizzazione",
 		"en": "Virtualization"
+	},
+	"skill_networking_virtualization_entries": {
+		"it": "VMware vSphere, VirtualBox, Vagrant, Docker",
+		"en": "VMware vSphere, VirtualBox, Vagrant, Docker"
 	},
 	"skill_networking_vcs": {
 		"it": "Controllo versione",
 		"en": "Version control"
 	},
+	"skill_networking_vcs_entries": {
+		"it": "Git, SVN",
+		"en": "Git, SVN"
+	},
 	"skill_networking_cloud": {
 		"it": "Piattaforme cloud",
 		"en": "Cloud platforms"
+	},
+	"skill_networking_cloud_entries": {
+		"it": "OwnCloud, NextCloud",
+		"en": "OwnCloud, NextCloud"
 	},
 	"skill_networking_antivirus": {
 		"it": "Antivirus",
 		"en": "Antivirus"
 	},
+	"skill_networking_antivirus_entries": {
+		"it": "Sophos Enterprise Console, Sophos Endpoint Antivirus, G Data",
+		"en": "Sophos Enterprise Console, Sophos Endpoint Antivirus, G Data"
+	},
 	"skill_networking_os": {
 		"it": "Sistemi operativi",
 		"en": "Operating Systems"
+	},
+	"skill_networking_os_entries": {
+		"it": "Linux, Android, Windows, Windows Server",
+		"en": "Linux, Android, Windows, Windows Server"
 	},
 	"level_base": {
 		"it": "Base",
@@ -186,6 +314,26 @@
 	"level_advanced": {
 		"it": "Avanzato",
 		"en": "Advanced"
+	},
+	"skills_development_base": {
+		"it": "Ruby, MySQL",
+		"en": "Ruby, MySQL"
+	},
+	"skills_development_intermediate": {
+		"it": "C, PHP, LaTeX, JavaScript/TypeScript, ASM MIPS",
+		"en": "C, PHP, LaTeX, JavaScript/TypeScript, ASM MIPS"
+	},
+	"skills_development_advanced": {
+		"it": "Java, Python, Bash, GoLang",
+		"en": "Java, Python, Bash, GoLang"
+	},
+	"skills_development_frameworks": {
+		"it": "Frameworks",
+		"en": "Frameworks"
+	},
+	"skills_development_frameworks_entries": {
+		"it": "Laravel, Spring Boot, Ionic, Flask",
+		"en": "Laravel, Spring Boot, Ionic, Flask"
 	},
 	"lang_italian": {
 		"it": "Italiano",

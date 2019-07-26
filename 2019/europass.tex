@@ -1,0 +1,96 @@
+% !TEX encoding = UTF-8
+% !TEX program = pdflatex
+% !TEX spellcheck = en_GB
+
+\documentclass[{{language}},a4paper]{europasscv}
+
+\ecvname{{{name}}}
+\ecvaddress{{{address}}, {{rome}} {{rm}}, {{italy}}}
+\ecvtelephone[{{phone}}]{{{phone}}}
+\ecvemail{{{email}}}
+\ecvhomepage{{{url_personal}}}
+% \ecvim{AOL Messenger}{username}
+% \ecvim{Google Talk}{username}
+
+\ecvdateofbirth{{{birth_date}}}
+\ecvnationality{{{nationality}}}
+\ecvgender{{{gender}}}
+
+\ecvpicture[width=3.8cm]{profile.png}
+
+\begin{document}
+  \begin{europasscv}
+    \ecvpersonalinfo
+    
+    % \ecvbigitem{Job applied for}{European project manager}
+    
+    \ecvsection{{{experience}}}
+    
+    \ecvtitle{12/2018 — 08/2019}{{{software_consultant}}}
+    \ecvitem{}{{{company_kubique}}\newline {{rome}}, {{italy}}}
+    \ecvitem{}{{{experience_kubique}}}
+    
+    \ecvtitle{07/2016 — 12/2018}{{{cofounder}} {{and}} CTO}
+    \ecvitem{}{{{company_cellula}}\newline {{rome}}, {{italy}}}
+    \ecvitem{}{{{experience_cellula}}}
+
+    \ecvtitle{10/2015 — 12/2018}{{{software_devops_engineer}}}
+    \ecvitem{}{{{company_inode}}\newline {{rome}}, {{italy}}}
+    \ecvitem{}{{{experience_inode_dev}}}  
+
+    \ecvtitle{07/2014 — 12/2018}{{{system_engineer}}}
+    \ecvitem{}{{{company_inode}}\newline {{rome}}, {{italy}}}
+    \ecvitem{}{{{experience_inode_sysadmin}}}
+
+    \ecvsection{{{education}}}
+    
+    \ecvtitlelevel{2019 — {{ongoing}}}{{{master_degree}}}{}
+    \ecvitem{}{{{master_degree_university}}}
+
+    \ecvtitlelevel{2014 — 2019}{{{university_degree}}}{{{university_degree_score}}}
+    \ecvitem{}{{{university_degree_university}}}
+
+    \ecvtitlelevel{2009 — 2014}{{{school_degree}}}{{{school_degree_score}}}
+    \ecvitem{}{{{school_degree_school}}}
+
+    \pagebreak
+    
+    \ecvsection{{{skills}}}
+    
+    \ecvblueitem{{{skills_networking}}}{
+      \begin{ecvitemize}
+        \item {{skill_networking_webhosting}}: {{skill_networking_webhosting_entries}}
+        \item {{skill_networking_mailhosting}}: {{skill_networking_mailhosting_entries}}
+        \item {{skill_networking_filehosting}}: {{skill_networking_filehosting_entries}}
+        \item {{skill_networking_dbms}}: {{skill_networking_dbms_entries}}
+        \item {{skill_networking_monitoring}}: {{skill_networking_monitoring_entries}}
+        \item {{skill_networking_backup}}: {{skill_networking_backup_entries}}
+        \item {{skill_networking_networking}}: {{skill_networking_networking_entries}}
+        \item {{skill_networking_remotecontrol}}: {{skill_networking_remotecontrol_entries}}
+        \item {{skill_networking_automation}}: {{skill_networking_automation_entries}}
+        \item {{skill_networking_virtualization}}: {{skill_networking_virtualization_entries}}
+        \item {{skill_networking_vcs}}: {{skill_networking_vcs_entries}}
+        \item {{skill_networking_cloud}}: {{skill_networking_cloud_entries}}
+        \item {{skill_networking_antivirus}}: {{skill_networking_antivirus_entries}}
+        \item {{skill_networking_os}}: {{skill_networking_os_entries}}
+      \end{ecvitemize}
+    }
+    
+    \ecvblueitem{{{skills_development}}}{
+      \begin{ecvitemize}
+        \item {{level_base}}: {{skills_development_base}}
+        \item {{level_intermediate}}: {{skills_development_intermediate}}
+        \item {{level_advanced}}: {{skills_development_advanced}}
+        \item {{skills_development_frameworks}}: {{skills_development_frameworks_entries}}
+      \end{ecvitemize}
+    }
+
+    \ecvmothertongue{{{lang_italian}}}
+    \ecvlanguageheader
+    \ecvlanguage{{{lang_english}}}{B2}{C1}{A2}{B2}{B1}
+    % \ecvlastlanguage{German}{A2}{A2}{A2}{A2}{A2}
+    \ecvlanguagefooter
+  
+  \end{europasscv}
+
+\end{document}
