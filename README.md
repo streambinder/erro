@@ -1,21 +1,3 @@
-# Curriculum Vitæ
+# Curriculum Vitæ <a href="https://doc.davidepucci.it/p/resume"><img align="left" width="40" height="40" src="https://uploads-ssl.webflow.com/5c349f90a3cd4515d0564552/5c66e5b48238e30e170da3be_logo.svg"></a>
 
-Don't think this project really needs any kind of explaination.
-
-Just to let you know: as I want to keep track even of my older _curricula_, project's root will separate any of them for year.
-
-## Download latest version
-
-In order to easily get latest version, you can batch download it this way:
-
-```bash
-# IT version
-wget $(curl -I https://github.com/streambinder/curriculum-vitae/releases/latest | \
-    grep ^Location\: | cut -d' ' -f2 | tr -cd "[:print:]" | \
-    sed 's/\/tag\//\/download\//g')/custom.it.pdf
-
-# EN version
-wget $(curl -I https://github.com/streambinder/curriculum-vitae/releases/latest | \
-    grep ^Location\: | cut -d' ' -f2 | tr -cd "[:print:]" | \
-    sed 's/\/tag\//\/download\//g')/custom.en.pdf
-```
+Documentation available at [doc.davidepucci.it/p/resume](https://doc.davidepucci.it/p/resume).
