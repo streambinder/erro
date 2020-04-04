@@ -1,10 +1,9 @@
-YEAR := $(shell find -maxdepth 1 -type d -printf '%f\n' | egrep -e '[0-9]{4}' | sort -ru | head -1)
-LANGUAGES := $(shell jq -r 'first(.[] | keys | @csv)' < $(YEAR)/keys.json | sed 's/,/ /g' | xargs)
+LANGUAGES := $(shell jq -r 'first(.[] | keys | @csv)' < src/keys.json | sed 's/,/ /g' | xargs)
 
 all:
 	@ ( \
 		mkdir -p bin; \
-		cd $(YEAR); \
+		cd src; \
 		for tex_variant in *.tex; do \
 			tex_basename="$$(sed 's/.tex//g' <<< "$${tex_variant}")"; \
 			for lang in $(LANGUAGES); do \
