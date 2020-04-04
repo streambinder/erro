@@ -57,6 +57,10 @@
 		"it": "Formazione",
 		"en": "Education"
 	},
+	"research": {
+		"it": "Ricerca",
+		"en": "Research"
+	},
 	"projects": {
 		"it": "Progetti",
 		"en": "Projects"
@@ -131,16 +135,16 @@
 		"default": "I-node S.r.l."
 	},
 	"master_degree": {
-		"it": "Master in Sicurezza e Ingegneria delle Reti",
-		"en": "Security and Network Engineering master"
+		"it": "Laurea magistrale in Sicurezza e Ingegneria delle Reti",
+		"en": "M.Sc. Security and Network Engineering"
 	},
 	"master_degree_university": {
-		"it": "UvA, Università di Amsterdam",
-		"en": "UvA, University of Amsterdam"
+		"it": "Science Park, Università di Amsterdam",
+		"en": "Science Park, University of Amsterdam"
 	},
 	"university_degree": {
-		"it": "Laurea in Informatica",
-		"en": "Bachelor's degree in Computer Science"
+		"it": "Laurea triennale in Informatica",
+		"en": "B.Sc. Computer Science"
 	},
 	"university_degree_university": {
 		"it": "La Sapienza, Universita' di Roma",
@@ -176,20 +180,16 @@
 		"it": "Problematiche complesse di rete e sistemi mi hanno insegnato a gestire problemi tecnici interfacciandomi con clienti e/o supporto tecnico di terze parti, ricoprendo il ruolo di supporto Tier 1 / Tier 2, realizzando ed amministrando infrastrutture informatiche complesse.",
 		"en": "I got familiar with interfacing with customers and/or third-party technical support, covering the role of Tier 1 / Tier 2 support, building and administering complex infrastructures."
 	},
-	"project_spaghettidevops": {
-		"it": "Insieme a due colleghi universitari ho intrapreso un'attività di blogging per la descrizione di problemi e soluzioni, utili per chi lavora nel panorama informatico. Nato principalmente per hobby, è stato spinto dall'interesse comune di realizzare una knowledge base per il generico lavoratore nel campo IT.",
-		"en": "Together with two university colleagues, I started a blogging activity that could describe problems and solutions in which anyone in the IT panorama could come across. It was born as a hobby, but was driven by the common interest to realize a knowledge base where any IT worker could get helped."
-	},
 	"project_moltenmotherboard": {
-		"it": "Per due anni ho sviluppato nel mondo Android sotto il nome di MoltenMotherBoard, progetto iniziato con altri due colleghi. Con questo team sono stati rilasciati custom ROMs, kernel e recovery, per diversi terminali, quali il Samsung Galaxy Gio GT-S5660, il Samsung Galaxy Pocket GT-S5300, il Samsung Galaxy Ace Plus GT-S7500 e l'LG Optimus 4X HD. Ho raggiunto, per quest'ultimo smartphone, il ruolo di manutentore ufficiale del codice sorgente nel team CyanogenMod.",
-		"en": "For two years I built Android systems under the name of MoltenMotherBoard, with two colleagues. This team released custom ROMs, kernels and recoveries, for several devices, such as Samsung Galaxy Gio GT-S5660, Samsung Galaxy Pocket GT-S5300, Samsung Galaxy Ace Plus GT-S7500 and LG Optimus 4X HD. The last one let me reach the role of official mantainer of its source code in the CyanogenMod team."
+		"it": "Per due anni ho sviluppato sistemi Android sotto il nome di MoltenMotherBoard. Questo team ha rilasciato custom ROMs, kernel e recovery, per diversi terminali, quali il Samsung Galaxy Gio GT-S5660, il Samsung Galaxy Pocket GT-S5300, il Samsung Galaxy Ace Plus GT-S7500 e l'LG Optimus 4X HD. Ho raggiunto, per quest'ultimo smartphone, il ruolo di manutentore ufficiale del codice sorgente nel team CyanogenMod.",
+		"en": "For two years I built Android systems under the name of MoltenMotherBoard. This team released custom ROMs, kernels and recoveries, for several devices, such as Samsung Galaxy Gio GT-S5660, Samsung Galaxy Pocket GT-S5300, Samsung Galaxy Ace Plus GT-S7500 and LG Optimus 4X HD. The last one let me reach the role of official mantainer of its source code in the CyanogenMod team."
 	},
 	"skill_networking_webhosting": {
 		"it": "Hosting web",
 		"en": "Web hosting"
 	},
 	"skill_networking_webhosting_entries": {
-		"default": "Apache, Nginx, ISPConfig, Plesk"
+		"default": "Apache, Nginx, ISPConfig, Plesk, IIS"
 	},
 	"skill_networking_mailhosting": {
 		"it": "Hosting email",
@@ -229,7 +229,13 @@
 		"en": "Networking"
 	},
 	"skill_networking_networking_entries": {
-		"default": "IPTables, IPsec, OpenVPN, GateProtect"
+		"default": "FRRouting, Bird, IPTables, IPsec, OpenVPN, GateProtect"
+	},
+	"skill_networking_routing": {
+		"default": "Routing"
+	},
+	"skill_networking_routing_entries": {
+		"default": "BGP, OSPF, RIP, MPLS"
 	},
 	"skill_networking_remotecontrol": {
 		"it": "Controllo remoto",
@@ -250,7 +256,7 @@
 		"en": "Virtualization"
 	},
 	"skill_networking_virtualization_entries": {
-		"default": "VMware vSphere, VirtualBox, Vagrant, Docker"
+		"default": "VMware vSphere, VirtualBox, Vagrant, Docker, Xen, LXC"
 	},
 	"skill_networking_vcs": {
 		"it": "Controllo versione",
@@ -304,7 +310,7 @@
 		"default": "Frameworks"
 	},
 	"skills_development_frameworks_entries": {
-		"default": "Laravel, Spring Boot, Ionic, Flask"
+		"default": "Laravel, Spring Boot, Angular, Ionic, Flask"
 	},
 	"lang_italian": {
 		"it": "Italiano",
