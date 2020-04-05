@@ -1,0 +1,74 @@
+% !TEX encoding = UTF-8
+
+\documentclass[\jvar{misc.language},a4paper]{europasscv}
+
+\ecvname{\jvar{personal.name}}
+\ecvaddress{\jvar{personal.address}, \jvar{personal.city}, \jvar{personal.country}}
+\ecvtelephone[\jvar{personal.phone}]{}
+\ecvemail{\jvar{personal.email}}
+\ecvhomepage{\jvar{personal.url_personal}}
+
+\ecvdateofbirth{\jvar{personal.birth_date}}
+\ecvnationality{\jvar{personal.nationality}}
+% \ecvgender{}
+
+\ecvpicture[width=3.8cm]{\jvar{personal.image}}
+
+\begin{document}
+    \begin{europasscv}
+
+        \ecvpersonalinfo
+        % \ecvbigitem{Job applied for}{European project manager}
+
+        \ecvsection{\jvar{work.label}}
+        \jblock{for entry in work.entries}
+            \ecvtitle{\jvar{entry.from} --- \jvar{entry.to}}{\jvar{entry.role}}
+            \ecvitem{}{\jvar{entry.company}}
+            \ecvitem{}{\jvar{entry.description}}
+        \jblock{endfor}
+
+        \ecvsection{\jvar{education.school.label}}
+        \jblock{for entry in education.school.entries }
+            \ecvtitlelevel{\jvar{entry.date}}{\jvar{entry.program}}{}
+            \ecvitem{}{\jvar{entry.school}}
+        \jblock{endfor}
+
+        \ecvsection{\jvar{education.research.label}}
+        \jblock{ for entry in education.research.entries }
+            \ecvtitlelevel{\jvar{entry.date}}{\jvar{entry.title}}{}
+            \jblock{if entry.researchers}
+                \ecvitem{}{\jvar{entry.researchers|join(', ')}}
+            \jblock{endif}
+        \jblock{endfor}
+
+        \pagebreak
+
+        \ecvsection{\jvar{skills.label}}
+
+        \ecvblueitem{\jvar{skills.networking.label}}{
+            \begin{ecvitemize}
+                \jblock{for entry in skills.networking.entries}
+                    \item \jvar{entry.category}: \textit{\jvar{entry.entries|join(', ')}}
+                \jblock{endfor}
+            \end{ecvitemize}
+        }
+
+        \ecvblueitem{\jvar{skills.coding.label}}{
+            \begin{ecvitemize}
+                \jblock{for entry in skills.coding.entries}
+                    \item \jvar{entry.category}: \textit{\jvar{entry.entries|join(', ')}}
+                \jblock{endfor}
+            \end{ecvitemize}
+        }
+
+        \ecvmothertongue{\jvar{personal.nationality}}
+        \ecvlanguageheader
+        \jblock{for entry in languages.entries}
+            \jblock{if loop.index > 1}
+                \ecvlanguage{\jvar{entry.name}}{B2}{C1}{A2}{B2}{B1}
+            \jblock{endif}
+        \jblock{endfor}
+        \ecvlanguagefooter
+
+    \end{europasscv}
+\end{document}

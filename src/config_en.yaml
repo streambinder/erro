@@ -1,0 +1,219 @@
+personal:
+  name: Davide Pucci
+  phone: +39 3298580201
+  email: posta@davidepucci.it
+  birth_date: 21th September 1995
+  address: Via Rocca Sinibalda 10
+  city: Rome
+  country: Italy
+  nationality: Italian
+  image: profile.png
+  url_personal: https://davidepucci.it
+  url_github: https://github.com/streambinder
+  url_github_abbr: github.com/streambinder
+  url_linkedin: https://linkedin.com/in/davide-pucci
+  url_linkedin_abbr: linkedin.com/in/davide-pucci
+
+work:
+  label: Work experiences
+  entries:
+    - role: Software Engineering Consultant
+      company: Kubique S.p.A.
+      from: 12/2018
+      to: 08/2019
+      description: >
+        Developed software tools for the open banking ecosystem using Java EE stack and aspect oriented programming.
+    - role: Co-founder and CTO
+      company: Cellula S.r.l.
+      from: 07/2016
+      to: 12/2018
+      description: >
+        Developed web-applications and administered customers infrastructures and services.
+    - role: Software / DevOps Engineer
+      company: I-node S.r.l.
+      from: 10/2015
+      to: 12/2018
+      description: >
+        Developed several projects and tools to realize their automatic deployment.
+    - role: System Engineer
+      company: I-node S.r.l.
+      from: 07/2014
+      to: 12/2018
+      description: >
+        Built and administered complex network infrastructures.
+        Interfaced with customers and third parties to cover Tier 1/2 support.
+
+education:
+  school:
+    label: Education
+    entries:
+      - program: M.Sc. Security and Network Engineering
+        school: Science Park, University of Amsterdam
+        date: 2020
+      - program: B.Sc. Computer Science
+        school:  La Sapienza, University of Rome
+        date: 2019
+      - program: Diploma in scientific studies
+        school: L.S.S. Amedeo Avogadro
+        date: 2014
+  research:
+    label: Research
+    entries:
+      - title: "Audio Steganography: a Deep Learning Approach"
+        researchers:
+          - Philippe Partarrieu
+        date: 2020
+      - title: BGP Flow-Spec for distributed micro-segmentation
+        date: 2020
+      - title: "REVCON: Reverse Network Reconnaissance"
+        researchers:
+          - Paul Dunn
+          - Philipp Mieden
+          - Axel Koolhaas
+        date: 2019
+
+projects:
+  label: Projects
+  entries:
+    - name: MoltenMotherBoard
+      members:
+        - Marco Panunzio
+        - Giovanni Santini
+      description: >
+        Developed custom Android systems under the name of MoltenMotherBoard.
+        Achieved the role of official device mantainer in CyanogenMod team for the LG Optimus 4X HD.
+      from: 2012
+      to: 2014
+
+skills:
+  label: Skills
+  networking:
+    label: Networking/Systems skills
+    entries:
+      - category: Web hosting
+        entries:
+          - Apache
+          - Nginx
+          - IIS
+          - ISPConfig
+          - Plesk
+      - category: Mail hosting
+        entries:
+          - Postfix
+          - Courier
+          - Dovecot
+          - Zimbra
+          - Roundcube
+      - category: File hosting
+        entries:
+          - VSFTP
+          - FTP
+      - category: DBMS
+        entries:
+          - MySQL/MariaDB
+          - PostgreSQL
+          - LightDB
+          - OrientDB
+      - category: Monitoring
+        entries:
+          - Nagios
+          - Icinga
+          - NagiosQL
+          - Cacti
+          - Netdata
+      - category: Backup
+        entries:
+          - Bacula
+          - Veeam
+          - Restic
+      - category: Remote control
+        entries:
+          - Bacula
+          - Samba
+          - NFSv4
+          - Kerberos
+      - category: Automation tools
+        entries:
+          - Make
+          - Maven
+          - Gradle
+          - Zeus
+      - category: Virtualization
+        entries:
+          - VMware vSphere
+          - VirtualBox
+          - Vagrant
+          - Docker
+          - Xen
+          - LXC
+      - category: Version control
+        entries:
+          - Git
+          - SVN
+      - category: Cloud platforms
+        entries:
+          - OwnCloud
+          - NextCloud
+      - category: Antivirus
+        entries:
+          - Sophos Enterprise Console
+          - Sophos Endpoint Antivirus
+          - G Data
+      - category: Networking
+        entries:
+          - FRRouting
+          - Bird
+          - iptables
+          - open/strong/libreSwan
+          - OpenVPN
+          - GateProtect
+      - category: Routing
+        entries:
+          - BGP
+          - OSPF
+          - RIP
+          - MPLS
+      - category: Operating Systems
+        entries:
+          - Linux
+          - Android
+          - Windows
+          - Windows Server
+  coding:
+    label: Development Skills
+    entries:
+      - category: Basic
+        entries:
+          - Ruby
+          - SQL
+      - category: Intermediate
+        entries:
+          - C
+          - PHP
+          - LaTeX
+          - Java/TypeScript
+          - ASM MIPS
+      - category: Advanced
+        entries:
+          - Java
+          - Python
+          - Bash
+          - Go
+      - category: Frameworks
+        entries:
+          - Laravel
+          - Spring Boot
+          - Angular/Ionic
+          - Flask
+
+languages:
+  label: Languages
+  entries:
+    - name: Italian
+      proficiency: Native proficiency
+    - name: English
+      proficiency: B1 - TOEFL certification
+
+misc:
+  footnote: ""
+  language: english
