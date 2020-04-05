@@ -1,0 +1,31 @@
+    
+globals:
+    build_dir: bin
+
+commands:
+
+    setup:
+        description: Prepare environment
+        exec: mkdir -p ${build_dir}/templates
+
+    template:
+        description: Compile templates into LaTeXs
+        language: python3
+        dependencies:
+            - setup
+
+    render:
+        description: Render LaTeX into PDFs
+        dependencies:
+            - template
+
+    generate:
+        description: Generate documents and cleanup
+        dependencies:
+            - render
+        exec: rm -rf ${build_dir}/templates
+
+    clean:
+        description: Clean up
+        exec: rm -rf ${build_dir}
+
