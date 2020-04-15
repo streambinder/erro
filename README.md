@@ -1,3 +1,3 @@
-# Curriculum Vitæ <a href="https://doc.davidepucci.it/p/resume"><img align="left" width="40" height="40" src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Lk98WhDUDZXla_K8Fa1%2F-Ll2CjG5uTsQcPj_YzhL%2F-Ll2D45DEcB5SXxz7XuI%2Fgitbook.svg?alt=media&token=dab99056-8588-4d83-88ec-ca98a8ba2801"></a>
+# Curriculum Vitæ <a href="https://davidepucci.it/doc/resume"><img align="left" src="https://davidepucci.it/favicon/favicon-96x96.png"></a>
 
-Documentation available at [doc.davidepucci.it/p/resume](https://doc.davidepucci.it/p/resume).
+Documentation available at [davidepucci.it/doc/resume](https://davidepucci.it/doc/resume).
