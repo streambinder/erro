@@ -4,6 +4,4 @@
 *.pdf
 *.synctex.gz
 *missfont.log
-zeus/data.yml
-zeus/dumps
-zeus/.historys
+build

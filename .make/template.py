@@ -39,7 +39,7 @@ for config in glob.glob('src/config_*.yaml'):
     for template in glob.glob('src/template_*.tex'):
         name = template.split('_')[1].split('.tex')[0]
         latex.get_template(template).stream(config_lang).dump(
-            'bin/templates/{}_{}.tex'.format(name, lang))
+            '{}/templates/{}_{}.tex'.format(os.environ['BUILD_DIR'],  name, lang))
 
     if os.path.isdir('src/assets'):
-        copy_tree('src/assets', 'bin/templates')
+        copy_tree('src/assets', '{}/templates'.format(os.environ['BUILD_DIR']))
