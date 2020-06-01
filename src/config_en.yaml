@@ -59,6 +59,10 @@ education:
   research:
     label: Research
     entries:
+      - title: "Agnostic embedding of digital signatures"
+        researchers:
+          - Sean Liao
+        date: 2020
       - title: "Audio Steganography: a Deep Learning Approach"
         researchers:
           - Philippe Partarrieu
