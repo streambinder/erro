@@ -31,7 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install jinja2 pyyaml
 
-      - name: Generate website
+      - name: Generate documents
         run: |
           make
       
