@@ -108,8 +108,11 @@ skills:
           - Dovecot
           - Zimbra
           - Roundcube
-      - category: File hosting
+      - category: File hosting and ACLs
         entries:
+          - Samba
+          - NFSv4
+          - Kerberos
           - VSFTP
           - FTP
       - category: DBMS
@@ -130,12 +133,6 @@ skills:
           - Bacula
           - Veeam
           - Restic
-      - category: Remote control
-        entries:
-          - Bacula
-          - Samba
-          - NFSv4
-          - Kerberos
       - category: Automation tools
         entries:
           - Make
