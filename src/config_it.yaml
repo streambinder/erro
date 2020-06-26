@@ -177,6 +177,7 @@ skills:
           - OSPF
           - RIP
           - MPLS
+          - EVPN
       - category: Sistemi operativi
         entries:
           - Linux
