@@ -59,6 +59,10 @@ education:
   research:
     label: Research
     entries:
+      - title: "Monitoring EVPN-VxLAN fabric with BMP"
+        researchers:
+          - Giacomo Casoni
+        date: 2020
       - title: "Agnostic embedding of digital signatures"
         researchers:
           - Sean Liao
