@@ -63,7 +63,7 @@
 \textbf{\textcolor{deepblue}{\uppercase{\jvar{education.school.label} \& \jvar{education.research.label}}}} \\\\ \hfill
 \begin{minipage}[t]{.45\textwidth}
 	\begin{tabular}{R{1cm} L{6cm}}
-		\jblock{for entry in education.school.entries }
+		\jblock{for entry in education.school.entries}
 			\textcolor{lightgray}{\jvar{entry.date}} &
 				\textbf{\jvar{entry.program}} \linebreak
 				\textit{\jvar{entry.school}} \\\\ \hfill
@@ -71,8 +71,9 @@
 	\end{tabular}
 \end{minipage}
 \begin{minipage}[t]{.55\textwidth}
+	\renewcommand{\arraystretch}{.6}
 	\begin{tabular}{R{1cm} L{7cm}}
-		\jblock{ for entry in education.research.entries }
+		\jblock{for entry in education.research.entries}
 			\textcolor{lightgray}{\jvar{entry.date}} &
 				\textbf{\jvar{entry.title}}
 				\jblock{if entry.researchers}
@@ -81,6 +82,7 @@
 				\\\\ \hfill
 		\jblock{endfor}
 	\end{tabular}
+	\renewcommand{\arraystretch}{1}
 \end{minipage}
 
 \textbf{\textcolor{deepblue}{\uppercase{\jvar{projects.label}}}} \\\\ \hfill
