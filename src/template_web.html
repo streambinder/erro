@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Resume</title>
+</head>
+
+<body>
+
+    <h1>
+        <jvar personal.name />
+    </h1>
+    <p>
+        <jvar personal.phone /><br>
+        <jvar personal.birth_date /><br>
+        <jvar personal.address />,
+        <jvar personal.city />,
+        <jvar personal.country />
+    </p>
+
+    <h2>
+        <jvar work.label />
+    </h2>
+    <table>
+        <tbody>
+            <jblock for entry in work.entries />
+            <tr>
+                <td>
+                    <jvar entry.from /> —
+                    <jvar entry.to />
+                </td>
+                <td>
+                    <b>
+                        <jvar entry.role />
+                    </b>,
+                    <i>
+                        <jvar entry.company />
+                    </i>
+                    <br>
+                    <jvar entry.description />
+                </td>
+            </tr>
+            <jblock endfor />
+        </tbody>
+    </table>
+
+    <h2>
+        <jvar education.school.label />
+    </h2>
+    <table>
+        <tbody>
+            <jblock for entry in education.school.entries />
+            <tr>
+                <td>
+                    <jvar entry.date />
+                </td>
+                <td>
+                    <b>
+                        <jvar entry.program />
+                    </b>
+                    <br>
+                    <i>
+                        <jvar entry.school />
+                    </i>
+                </td>
+            </tr>
+            <jblock endfor />
+        </tbody>
+    </table>
+
+    <h2>
+        <jvar education.research.label />
+    </h2>
+    <table>
+        <tbody>
+            <jblock for entry in education.research.entries />
+            <tr>
+                <td>
+                    <jvar entry.date />
+                </td>
+                <td>
+                    <b>
+                        <jvar entry.title />
+                    </b>
+                    <br>
+                    <i>
+                        <jvar entry.researchers|join(', ') />
+                    </i>
+                </td>
+            </tr>
+            <jblock endfor />
+        </tbody>
+    </table>
+
+    <h2>
+        <jvar projects.label />
+    </h2>
+    <table>
+        <tbody>
+            <jblock for entry in projects.entries />
+            <tr>
+                <td>
+                    <jvar entry.from /> —
+                    <jvar entry.to />
+                </td>
+                <td>
+                    <b>
+                        <jvar entry.name />
+                    </b>,
+                    <i>
+                        <jvar entry.members|join(', ') />
+                    </i>
+                    <br>
+                    <jvar entry.description />
+                </td>
+            </tr>
+            <jblock endfor />
+        </tbody>
+    </table>
+
+    <h2>
+        <jvar skills.networking.label />
+    </h2>
+    <table>
+        <tbody>
+            <jblock for entry in skills.networking.entries />
+            <tr>
+                <td>
+                    <jvar entry.category />
+                </td>
+                <td>
+                    <i>
+                        <jvar entry.entries|join(', ') />
+                    </i>
+                </td>
+            </tr>
+            <jblock endfor />
+        </tbody>
+    </table>
+
+    <h2>
+        <jvar skills.coding.label />
+    </h2>
+    <table>
+        <tbody>
+            <jblock for entry in skills.coding.entries />
+            <tr>
+                <td>
+                    <jvar entry.category />
+                </td>
+                <td>
+                    <i>
+                        <jvar entry.entries|join(', ') />
+                    </i>
+                </td>
+            </tr>
+            <jblock endfor />
+        </tbody>
+    </table>
+
+    <h2>
+        <jvar languages.label />
+    </h2>
+    <table>
+        <tbody>
+            <jblock for entry in languages.entries />
+            <tr>
+                <td>
+                    <jvar entry.name />
+                </td>
+                <td>
+                    <jvar entry.proficiency />
+                </td>
+            </tr>
+            <jblock endfor />
+        </tbody>
+    </table>
+
+</body>
+
+</html>
