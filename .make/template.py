@@ -60,4 +60,4 @@ for config in glob.glob('src/config_*.yaml'):
             '{}/templates/{}_{}.{}'.format(os.environ['BUILD_DIR'],  t_name, lang, t_format))
 
     if os.path.isdir('src/assets'):
-        copy_tree('src/assets', '{}/templates'.format(os.environ['BUILD_DIR']))
+        copy_tree('src/assets', '{}'.format(os.environ['BUILD_DIR']))
