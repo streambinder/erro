@@ -1,9 +1,12 @@
 #!/bin/bash
 
-cd ${BUILD_DIR}/templates
+cd ${BUILD_DIR}
 
-for template in *.tex; do
+mv -f templates/*html ./
+
+for template_tex in templates/*.tex; do
     pdflatex -synctex=1 -interaction=nonstopmode \
-        -output-directory=../ ${template} > /dev/null 2>&1
-    find .. -maxdepth 1 -type f -not -name '*.pdf' -delete
+        ${template_tex} > /dev/null 2>&1
 done
+
+find -maxdepth 1 -type f -not -name '*.pdf' -a -not -name '*.html' -delete
