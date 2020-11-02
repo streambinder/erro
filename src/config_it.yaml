@@ -34,7 +34,7 @@ work:
       from: 07/2016
       to: 12/2018
       description: >
-        Ho sviluppato web-applications e amministrato le infrastrutture e i servizi destinati ai clienti.
+        Ho sviluppato web-applications e gestito le infrastrutture destinati ai clienti.
     - role: Amministratore di sistemi
       company: I-node S.r.l.
       from: 07/2014
@@ -47,7 +47,7 @@ education:
   school:
     label: Formazione
     entries:
-      - program: Laurea magistrale in Sicurezza e Ingegneria delle Reti
+      - program: Laurea magistrale in Sicurezza e Reti
         school: Science Park, Università di Amsterdam
         date: 2020
       - program: Laurea triennale in Informatica
@@ -88,8 +88,8 @@ projects:
         - Marco Panunzio
         - Giovanni Santini
       description: >
-        Ho sviluppato sistemi Android personalizzati sotto il nome di MoltenMotherBoard.
-        Ho raggiunto il ruolo di manutentore ufficiale del dispositivo LG Optimus 4X HD nel team CyanogenMod.
+        Ho sviluppato sistemi Android sotto il nome di MoltenMotherBoard.
+        Sono stato manutentore ufficiale del dispositivo LG Optimus 4X HD nel team CyanogenMod.
       from: 2012
       to: 2014
 
