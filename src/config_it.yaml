@@ -17,6 +17,12 @@ personal:
 work:
   label: Esperienze lavorative
   entries:
+    - role: Site Reliability Engineer
+      company: Immobiliare.it
+      from: 11/2020
+      to: in corso
+      description: >
+        Progetto e realizzo infrastrutture di rete, scrivo codice per automatizzare procedure e processi nelle reti e i sistemi amministrate, e li manutengo realizzando sistemi di monitoraggio consistenti.
     - role: Consulente Sviluppatore
       company: Kubique S.p.A.
       from: 12/2018
@@ -29,12 +35,6 @@ work:
       to: 12/2018
       description: >
         Ho sviluppato web-applications e amministrato le infrastrutture e i servizi destinati ai clienti.
-    - role: Sviluppatore / Ingegnere DevOps
-      company: I-node S.r.l.
-      from: 10/2015
-      to: 12/2018
-      description: >
-        Ho sviluppato diversi progetti e strumenti per realizzarne il rilascio automatico.
     - role: Amministratore di sistemi
       company: I-node S.r.l.
       from: 07/2014

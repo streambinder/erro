@@ -17,6 +17,12 @@ personal:
 work:
   label: Work experiences
   entries:
+    - role: Site Reliability Engineer
+      company: Immobiliare.it
+      from: 11/2020
+      to: ongoing
+      description: >
+       Engineering and deploying infrastructures, writing code to automate procedures and processes across networks and systems, and maintaining them by realizing consistent and coherent monitoring systems.
     - role: Software Engineering Consultant
       company: Kubique S.p.A.
       from: 12/2018
@@ -29,12 +35,6 @@ work:
       to: 12/2018
       description: >
         Developed web-applications and administered customers infrastructures and services.
-    - role: Software / DevOps Engineer
-      company: I-node S.r.l.
-      from: 10/2015
-      to: 12/2018
-      description: >
-        Developed several projects and tools to realize their automatic deployment.
     - role: Systems Engineer
       company: I-node S.r.l.
       from: 07/2014
