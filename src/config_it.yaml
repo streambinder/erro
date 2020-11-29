@@ -51,7 +51,7 @@ education:
         school: Science Park, Università di Amsterdam
         date: 2020
       - program: Laurea triennale in Informatica
-        school:  La Sapienza, Università di Roma
+        school: La Sapienza, Università di Roma
         date: 2019
       - program: Diploma di liceo scientifico
         school: L.S.S. Amedeo Avogadro
@@ -137,7 +137,7 @@ skills:
           - Bacula
           - Veeam
           - Restic
-      - category: Automazione di sviluppo
+      - category: Strumenti di sviluppo
         entries:
           - Make
           - Maven
@@ -179,6 +179,9 @@ skills:
           - RIP
           - MPLS
           - EVPN
+      - category: Stack di automazione
+        entries:
+          - SaltStack
       - category: Sistemi operativi
         entries:
           - Linux

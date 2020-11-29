@@ -22,7 +22,7 @@ work:
       from: 11/2020
       to: ongoing
       description: >
-       Engineering and deploying infrastructures, writing code to automate procedures and processes across networks and systems, and maintaining them by realizing consistent and coherent monitoring systems.
+        Engineering and deploying infrastructures, writing code to automate procedures and processes across networks and systems, and maintaining them by realizing consistent and coherent monitoring systems.
     - role: Software Engineering Consultant
       company: Kubique S.p.A.
       from: 12/2018
@@ -51,7 +51,7 @@ education:
         school: Science Park, University of Amsterdam
         date: 2020
       - program: B.Sc. Computer Science
-        school:  La Sapienza, University of Rome
+        school: La Sapienza, University of Rome
         date: 2019
       - program: Diploma in scientific studies
         school: L.S.S. Amedeo Avogadro
@@ -137,7 +137,7 @@ skills:
           - Bacula
           - Veeam
           - Restic
-      - category: Automation tools
+      - category: Build tools
         entries:
           - Make
           - Maven
@@ -179,6 +179,9 @@ skills:
           - RIP
           - MPLS
           - EVPN
+      - category: Automation stacks
+        entries:
+          - SaltStack
       - category: Operating Systems
         entries:
           - Linux
