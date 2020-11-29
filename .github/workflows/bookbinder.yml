@@ -24,6 +24,7 @@ jobs:
 
       - name: Install system dependencies
         run: |
+          sudo apt update
           sudo apt install -y texlive-full
 
       - name: Install Python dependencies
