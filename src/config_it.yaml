@@ -105,6 +105,7 @@ skills:
           - IIS
           - ISPConfig
           - Plesk
+          - HAProxy
       - category: Hosting email
         entries:
           - Postfix
@@ -132,6 +133,8 @@ skills:
           - NagiosQL
           - Cacti
           - Netdata
+          - collectd
+          - Grafana
       - category: Backup
         entries:
           - Bacula
