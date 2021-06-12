@@ -185,6 +185,7 @@ skills:
       - category: Stack di automazione
         entries:
           - SaltStack
+          - Terraform
       - category: Sistemi operativi
         entries:
           - Linux

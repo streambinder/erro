@@ -185,6 +185,7 @@ skills:
       - category: Automation stacks
         entries:
           - SaltStack
+          - Terraform
       - category: Operating Systems
         entries:
           - Linux
