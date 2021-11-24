@@ -17,6 +17,12 @@ personal:
 work:
   label: Work experiences
   entries:
+    - role: Systems Development Area Leader
+      company: Immobiliare.it S.p.A.
+      from: 11/2021
+      to: ongoing
+      description: >
+        Orchestrating and managing software and tooling development oriented to systems and infrastructure.
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 11/2020

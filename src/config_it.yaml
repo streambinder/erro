@@ -17,6 +17,12 @@ personal:
 work:
   label: Esperienze lavorative
   entries:
+    - role: Systems Development Area Leader
+      company: Immobiliare.it S.p.A.
+      from: 11/2021
+      to: in corso
+      description: >
+        Orchestro e gestisco lo sviluppo di software e strumenti orientati ai sistemi e alle infrastrutture.
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 11/2020
