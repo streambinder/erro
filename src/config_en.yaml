@@ -192,6 +192,7 @@ skills:
         entries:
           - SaltStack
           - Terraform
+          - Ansible
       - category: Operating Systems
         entries:
           - Linux
