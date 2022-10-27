@@ -9,4 +9,4 @@ for template_tex in templates/*.tex; do
         ${template_tex} > /dev/null 2>&1
 done
 
-find -maxdepth 1 -type f -not -name '*.pdf' -a -not -name '*.html' -delete
+find . -maxdepth 1 -type f -not -name '*.pdf' -a -not -name '*.html' -delete

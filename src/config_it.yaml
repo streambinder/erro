@@ -17,18 +17,24 @@ personal:
 work:
   label: Esperienze lavorative
   entries:
+    - role: Enterprise Systems Engineer
+      company: Meta Platforms, Inc.
+      from: 10/2022
+      to: in corso
+      description: >
+        Realizzo e gestisco sistemi e strumenti ad-hoc che possano supportare i team interni di Meta in tutto il mondo.
     - role: Systems Development Area Leader
       company: Immobiliare.it S.p.A.
       from: 11/2021
-      to: in corso
+      to: 10/2022
       description: >
-        Orchestro e gestisco lo sviluppo di software e strumenti orientati ai sistemi e alle infrastrutture.
+        Ho orchestrato e gestito lo sviluppo di software e strumenti orientati ai sistemi e alle infrastrutture.
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 11/2020
-      to: in corso
+      to: 10/2022
       description: >
-        Progetto e realizzo infrastrutture di rete, scrivo codice per automatizzare procedure e processi nelle reti e i sistemi amministrate, e li manutengo realizzando sistemi di monitoraggio consistenti.
+        Ho progettato e realizzato infrastrutture di rete, scritto codice per automatizzare procedure e processi nelle reti e i sistemi amministrate, e li ho manutenuti realizzando sistemi di monitoraggio consistenti.
     - role: Consulente Sviluppatore
       company: Kubique S.p.A.
       from: 12/2018

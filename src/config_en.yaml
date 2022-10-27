@@ -17,18 +17,24 @@ personal:
 work:
   label: Work experiences
   entries:
+    - role: Enterprise Systems Engineer
+      company: Meta Platforms, Inc.
+      from: 10/2022
+      to: ongoing
+      description: >
+        Building custom, cutting-edge systems and tools that securely support and empower the Meta internal teams around the world.
     - role: Systems Development Area Leader
       company: Immobiliare.it S.p.A.
       from: 11/2021
-      to: ongoing
+      to: 10/2022
       description: >
-        Orchestrating and managing software and tooling development oriented to systems and infrastructure.
+        Orchestrated and managed software and tooling development oriented to systems and infrastructure.
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 11/2020
-      to: ongoing
+      to: 10/2022
       description: >
-        Engineering and deploying infrastructures, writing code to automate procedures and processes across networks and systems, and maintaining them by realizing consistent and coherent monitoring systems.
+        Engineered and deployed infrastructures, wrote code to automate procedures and processes across networks and systems, and maintained them by realizing consistent and coherent monitoring systems.
     - role: Software Engineering Consultant
       company: Kubique S.p.A.
       from: 12/2018
