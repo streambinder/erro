@@ -161,6 +161,7 @@ skills:
       - category: Virtualizzazione
         entries:
           - VMware vSphere
+          - OpenStack
           - VirtualBox
           - Vagrant
           - Docker
