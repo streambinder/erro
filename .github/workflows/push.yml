@@ -22,6 +22,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_ERRO }}
           VALIDATE_ALL_CODEBASE: false
   build:
+    needs: [lint]
+    if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
