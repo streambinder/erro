@@ -1,0 +1,51 @@
+{{ personal.name }}
+{{ "="*(personal.name|length) }}
+
+{{ work.label }}
+{{ "-"*(work.label|length) }}
+
+{% for entry in work.entries %}
+- {{ entry.role }} @{{ entry.company }} ({{ entry.from }} — {{ entry.to }}): {{ entry.description }}
+{% endfor %}
+
+{{ education.school.label }}
+{{ "-"*(education.school.label|length) }}
+
+{% for entry in education.school.entries %}
+- {{ entry.program }} @{{ entry.school }} ({{ entry.date }})
+{% endfor %}
+
+{{ education.research.label }}
+{{ "-"*(education.research.label|length) }}
+
+{% for entry in education.research.entries %}
+- {{ entry.title }} ({{ entry.researchers|join(', ') }})
+{% endfor %}
+
+{{ projects.label }}
+{{ "-"*(projects.label|length) }}
+
+{% for entry in projects.entries %}
+- {{ entry.name }} ({{ entry.from }} — {{ entry.to }}) ({{ entry.members|join(', ') }}): {{ entry.description }}
+{% endfor %}
+
+{{ skills.networking.label }}
+{{ "-"*(skills.networking.label|length) }}
+
+{% for entry in skills.networking.entries %}
+- {{ entry.category }}: {{ entry.entries|join(', ') }}
+{% endfor %}
+
+{{ skills.coding.label }}
+{{ "-"*(skills.coding.label|length) }}
+
+{% for entry in skills.coding.entries %}
+- {{ entry.category }}: {{ entry.entries|join(', ') }}
+{% endfor %}
+
+{{ languages.label }}
+{{ "-"*(languages.label|length) }}
+
+{% for entry in languages.entries %}
+- {{ entry.name }}: {{ entry.proficiency }}
+{% endfor %}

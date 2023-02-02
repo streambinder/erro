@@ -9,6 +9,17 @@ from jinja2 import Template
 from distutils.dir_util import copy_tree
 
 j_envs = {
+    'html': jinja2.Environment(
+        block_start_string='<jblock',
+        block_end_string='/>',
+        variable_start_string='<jvar',
+        variable_end_string='/>',
+        comment_start_string='<!--',
+        comment_end_string='-->',
+        trim_blocks=True,
+        autoescape=False,
+        loader=jinja2.FileSystemLoader(os.path.abspath('.'))
+    ),
     'tex': jinja2.Environment(
         block_start_string='\\jblock{',
         block_end_string='}',
@@ -22,13 +33,13 @@ j_envs = {
         autoescape=False,
         loader=jinja2.FileSystemLoader(os.path.abspath('.'))
     ),
-    'html': jinja2.Environment(
-        block_start_string='<jblock',
-        block_end_string='/>',
-        variable_start_string='<jvar',
-        variable_end_string='/>',
-        comment_start_string='<!--',
-        comment_end_string='-->',
+    'txt': jinja2.Environment(
+        block_start_string='{%',
+        block_end_string='%}',
+        variable_start_string='{{',
+        variable_end_string='}}',
+        comment_start_string='{#',
+        comment_end_string='#}',
         trim_blocks=True,
         autoescape=False,
         loader=jinja2.FileSystemLoader(os.path.abspath('.'))
