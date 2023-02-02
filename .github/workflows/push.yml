@@ -49,7 +49,7 @@ jobs:
           path: build/*
       - name: Generate date output
         id: date
-        run: echo "today=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        run: echo today="$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
