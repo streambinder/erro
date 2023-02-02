@@ -47,14 +47,17 @@ jobs:
         with:
           name: resume
           path: build/*
+      - name: Generate date output
+        id: date
+        run: echo "today=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GH_ACTIONS_ERRO }}
           automatic_release_tag: latest
           prerelease: false
-          files: |
-            build/*
+          title: ${{ steps.date.outputs.today }}
+          files: build/*
   notify:
     needs: [lint,build]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
