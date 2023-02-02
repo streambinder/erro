@@ -47,8 +47,8 @@ j_envs = {
 }
 
 
-for config in glob.glob('src/config_*.yaml'):
-    lang = config.split('_')[1].split('.yaml')[0]
+for config in glob.glob('src/langs/*.yml'):
+    lang = config.split(os.path.sep)[-1].split('.yml')[0]
     config_lang = None
     with open(config, 'r') as config_fd:
         try:
@@ -60,13 +60,13 @@ for config in glob.glob('src/config_*.yaml'):
         print('unable to parse {}'.format(config))
         continue
 
-    for template in glob.glob('src/template_*'):
-        t_format = template.split('.')[-1]
+    for template in glob.glob('src/templates/*.j2'):
+        t_format = template.split('.')[-2]
         if t_format not in j_envs:
             print('template format {} not supported'.format(t_format))
             continue
 
-        t_name = template.split('_')[1].split('.{}'.format(t_format))[0]
+        t_name = template.split(os.path.sep)[-1].split('.{}'.format(t_format))[0]
         j_envs[t_format].get_template(template).stream(config_lang).dump(
             '{}/templates/{}_{}.{}'.format(os.environ['BUILD_DIR'],  t_name, lang, t_format))
 

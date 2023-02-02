@@ -19,14 +19,15 @@
 {{ "-"*(education.research.label|length) }}
 
 {% for entry in education.research.entries %}
-- {{ entry.title }} ({{ entry.researchers|join(', ') }})
+- {{ entry.title }}{% if entry.researchers|length > 0 %} ({{ entry.researchers|join(', ') }}){% endif %}
+
 {% endfor %}
 
 {{ projects.label }}
 {{ "-"*(projects.label|length) }}
 
 {% for entry in projects.entries %}
-- {{ entry.name }} ({{ entry.from }} — {{ entry.to }}) ({{ entry.members|join(', ') }}): {{ entry.description }}
+- {{ entry.name }} ({{ entry.from }} — {{ entry.to }}){% if entry.members|length > 0 %}({{ entry.members|join(', ') }}){% endif %}: {{ entry.description }}
 {% endfor %}
 
 {{ skills.networking.label }}
