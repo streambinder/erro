@@ -5,7 +5,7 @@
 {{ "-"*(work.label|length) }}
 
 {% for entry in work.entries %}
-- {{ entry.role }} @{{ entry.company }} ({{ entry.from }} — {{ entry.to }}): {{ entry.description }}
+- {{ entry.role }} @{{ entry.company }} ({{ entry.from }} – {{ entry.to }}): {{ entry.description }}
 {% endfor %}
 
 {{ education.school.label }}
@@ -27,7 +27,7 @@
 {{ "-"*(projects.label|length) }}
 
 {% for entry in projects.entries %}
-- {{ entry.name }} ({{ entry.from }} — {{ entry.to }}){% if entry.members|length > 0 %}({{ entry.members|join(', ') }}){% endif %}: {{ entry.description }}
+- {{ entry.name }} ({{ entry.from }} – {{ entry.to }}){% if entry.members|length > 0 %}({{ entry.members|join(', ') }}){% endif %}: {{ entry.description }}
 {% endfor %}
 
 {{ skills.networking.label }}
