@@ -45,6 +45,8 @@ j_envs = {
     ),
 }
 
+if os.path.isdir("src/assets"):
+    copy_tree("src/assets", "{}".format(os.environ["BUILD_DIR"]))
 
 for config in glob.glob("src/langs/*.yml"):
     lang = config.split(os.path.sep)[-1].split(".yml")[0]
@@ -71,6 +73,3 @@ for config in glob.glob("src/langs/*.yml"):
                 os.environ["BUILD_DIR"], t_name, lang, t_format
             )
         )
-
-    if os.path.isdir("src/assets"):
-        copy_tree("src/assets", "{}".format(os.environ["BUILD_DIR"]))
