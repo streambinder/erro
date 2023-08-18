@@ -96,16 +96,9 @@
 	\jblock{endfor}
 \end{tabular}
 
-\textbf{\textcolor{deepblue}{\uppercase{\jvar{skills.networking.label}}}} \\\\ \hfill
+\textbf{\textcolor{deepblue}{\uppercase{\jvar{programming.label}}}} \\\\ \hfill
 \begin{tabular}{R{4cm} L{11cm}}
-	\jblock{for entry in skills.networking.entries}
-		\textcolor{lightgray}{\jvar{entry.category}} & \textit{\jvar{entry.entries|join(', ')}} \\ \hfill
-	\jblock{endfor}
-\end{tabular}
-
-\textbf{\textcolor{deepblue}{\uppercase{\jvar{skills.coding.label}}}} \\\\ \hfill
-\begin{tabular}{R{4cm} L{11cm}}
-	\jblock{for entry in skills.coding.entries}
+	\jblock{for entry in programming.entries}
 		\textcolor{lightgray}{\jvar{entry.category}} & \textit{\jvar{entry.entries|join(', ')}} \\ \hfill
 	\jblock{endfor}
 \end{tabular}

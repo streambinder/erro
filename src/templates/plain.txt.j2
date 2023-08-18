@@ -30,17 +30,10 @@
 - {{ entry.name }} ({{ entry.from }} – {{ entry.to }}){% if entry.members|length > 0 %}({{ entry.members|join(', ') }}){% endif %}: {{ entry.description }}
 {% endfor %}
 
-{{ skills.networking.label }}
-{{ "-"*(skills.networking.label|length) }}
+{{ programming.label }}
+{{ "-"*(programming.label|length) }}
 
-{% for entry in skills.networking.entries %}
-- {{ entry.category }}: {{ entry.entries|join(', ') }}
-{% endfor %}
-
-{{ skills.coding.label }}
-{{ "-"*(skills.coding.label|length) }}
-
-{% for entry in skills.coding.entries %}
+{% for entry in programming.entries %}
 - {{ entry.category }}: {{ entry.entries|join(', ') }}
 {% endfor %}
 

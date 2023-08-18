@@ -28,7 +28,7 @@ work:
       from: 11/2021
       to: 10/2022
       description: >-
-        Ho orchestrato e gestito lo sviluppo di software e strumenti orientati ai sistemi e alle infrastrutture.
+        Ho orchestrato e gestito lo sviluppo di software orientati ai sistemi e alle infrastrutture.
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 11/2020
@@ -52,8 +52,7 @@ work:
       from: 07/2014
       to: 12/2018
       description: >-
-        Ho realizzato ed amministrato infrastrutture di rete complesse.
-        Mi sono interfacciato con clienti e terze parti per offrire supporto Tier 1/2.
+        Ho amministrato infrastrutture di rete e mi sono interfacciato con clienti per supporto Tier 1/2.
 
 education:
   school:
@@ -105,133 +104,26 @@ projects:
       from: 2012
       to: 2014
 
-skills:
-  label: Abilità
-  networking:
-    label: Abilità in rete/sistemi
-    entries:
-      - category: Hosting web
-        entries:
-          - Apache
-          - Nginx
-          - IIS
-          - ISPConfig
-          - Plesk
-          - HAProxy
-      - category: Hosting email
-        entries:
-          - Postfix
-          - Courier
-          - Dovecot
-          - Zimbra
-          - Roundcube
-      - category: Hosting file e ACL
-        entries:
-          - Samba
-          - NFSv4
-          - Kerberos
-          - VSFTP
-          - FTP
-      - category: DBMS
-        entries:
-          - MySQL/MariaDB
-          - PostgreSQL
-          - LightDB
-          - OrientDB
-      - category: Monitoraggio
-        entries:
-          - Nagios
-          - Icinga
-          - NagiosQL
-          - Cacti
-          - Netdata
-          - collectd
-          - Grafana
-      - category: Backup
-        entries:
-          - Bacula
-          - Veeam
-          - Restic
-      - category: Strumenti di sviluppo
-        entries:
-          - Make
-          - Maven
-          - Gradle
-          - Zeus
-      - category: Virtualizzazione
-        entries:
-          - VMware vSphere
-          - OpenStack
-          - VirtualBox
-          - Vagrant
-          - Docker
-          - Xen
-          - LXC
-      - category: Controllo versione
-        entries:
-          - Git
-          - SVN
-      - category: Piattaforme cloud
-        entries:
-          - OwnCloud
-          - NextCloud
-      - category: Antivirus
-        entries:
-          - Sophos Enterprise Console
-          - Sophos Endpoint Antivirus
-          - G Data
-      - category: Rete
-        entries:
-          - FRRouting
-          - Bird
-          - iptables
-          - open/strong/libreSwan
-          - OpenVPN
-          - GateProtect
-      - category: Routing
-        entries:
-          - BGP
-          - OSPF
-          - RIP
-          - MPLS
-          - EVPN
-      - category: Stack di automazione
-        entries:
-          - SaltStack
-          - Terraform
-          - Ansible
-      - category: Sistemi operativi
-        entries:
-          - Linux
-          - Android
-          - Windows
-          - Windows Server
-  coding:
-    label: Abilità in sviluppo
-    entries:
-      - category: Base
-        entries:
-          - Ruby
-          - SQL
-      - category: Intermedio
-        entries:
-          - C
-          - PHP
-          - LaTeX
-          - Java/TypeScript
-          - ASM MIPS
-      - category: Avanzato
-        entries:
-          - Java
-          - Python
-          - Bash
-          - Go
-      - category: Frameworks
-        entries:
-          - Laravel
-          - Spring Boot
-          - Angular/Ionic
-          - Flask
+programming:
+  label: Programmazione
+  entries:
+    - category: Base
+      entries:
+        - Ruby
+        - SQL
+    - category: Intermedio
+      entries:
+        - C
+        - PHP
+        - LaTeX
+        - Java/TypeScript
+        - ASM MIPS
+    - category: Avanzato
+      entries:
+        - Java
+        - Python
+        - Bash
+        - Go
 
 languages:
   label: Lingue

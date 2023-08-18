@@ -3,7 +3,7 @@ personal:
   phone: +39 3298580201
   email: posta@davidepucci.it
   birth_date: 21th September 1995
-  address: Via Collalto Sabino, 14
+  address: Via Collalto Sabino 14
   city: Rome
   country: Italy
   nationality: Italian
@@ -28,7 +28,7 @@ work:
       from: 11/2021
       to: 10/2022
       description: >-
-        Orchestrated and managed software and tooling development oriented to systems and infrastructure.
+        Orchestrated and managed software development oriented to systems and infrastructure.
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 11/2020
@@ -52,8 +52,7 @@ work:
       from: 07/2014
       to: 12/2018
       description: >-
-        Built and administered complex network infrastructures.
-        Interfaced with customers and third parties to cover Tier 1/2 support.
+        Administered network infrastructures and interfaced with customers to cover Tier 1/2 support.
 
 education:
   school:
@@ -105,133 +104,26 @@ projects:
       from: 2012
       to: 2014
 
-skills:
-  label: Skills
-  networking:
-    label: Networking/Systems skills
-    entries:
-      - category: Web hosting
-        entries:
-          - Apache
-          - Nginx
-          - IIS
-          - ISPConfig
-          - Plesk
-          - HAProxy
-      - category: Mail hosting
-        entries:
-          - Postfix
-          - Courier
-          - Dovecot
-          - Zimbra
-          - Roundcube
-      - category: File hosting and ACLs
-        entries:
-          - Samba
-          - NFSv4
-          - Kerberos
-          - VSFTP
-          - FTP
-      - category: DBMS
-        entries:
-          - MySQL/MariaDB
-          - PostgreSQL
-          - LightDB
-          - OrientDB
-      - category: Monitoring
-        entries:
-          - Nagios
-          - Icinga
-          - NagiosQL
-          - Cacti
-          - Netdata
-          - collectd
-          - Grafana
-      - category: Backup
-        entries:
-          - Bacula
-          - Veeam
-          - Restic
-      - category: Build tools
-        entries:
-          - Make
-          - Maven
-          - Gradle
-          - Zeus
-      - category: Virtualization
-        entries:
-          - VMware vSphere
-          - OpenStack
-          - VirtualBox
-          - Vagrant
-          - Docker
-          - Xen
-          - LXC
-      - category: Version control
-        entries:
-          - Git
-          - SVN
-      - category: Cloud platforms
-        entries:
-          - OwnCloud
-          - NextCloud
-      - category: Antivirus
-        entries:
-          - Sophos Enterprise Console
-          - Sophos Endpoint Antivirus
-          - G Data
-      - category: Networking
-        entries:
-          - FRRouting
-          - Bird
-          - iptables
-          - open/strong/libreSwan
-          - OpenVPN
-          - GateProtect
-      - category: Routing
-        entries:
-          - BGP
-          - OSPF
-          - RIP
-          - MPLS
-          - EVPN
-      - category: Automation stacks
-        entries:
-          - SaltStack
-          - Terraform
-          - Ansible
-      - category: Operating Systems
-        entries:
-          - Linux
-          - Android
-          - Windows
-          - Windows Server
-  coding:
-    label: Development Skills
-    entries:
-      - category: Basic
-        entries:
-          - Ruby
-          - SQL
-      - category: Intermediate
-        entries:
-          - C
-          - PHP
-          - LaTeX
-          - Java/TypeScript
-          - ASM MIPS
-      - category: Advanced
-        entries:
-          - Java
-          - Python
-          - Bash
-          - Go
-      - category: Frameworks
-        entries:
-          - Laravel
-          - Spring Boot
-          - Angular/Ionic
-          - Flask
+programming:
+  label: Programming
+  entries:
+    - category: Basic
+      entries:
+        - Ruby
+        - SQL
+    - category: Intermediate
+      entries:
+        - C
+        - PHP
+        - LaTeX
+        - Java/TypeScript
+        - ASM MIPS
+    - category: Advanced
+      entries:
+        - Java
+        - Python
+        - Bash
+        - Go
 
 languages:
   label: Languages

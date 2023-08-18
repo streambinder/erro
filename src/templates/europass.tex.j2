@@ -1,6 +1,6 @@
 % !TEX encoding = UTF-8
 
-\documentclass[\jvar{misc.language},a4paper]{europasscv}
+\documentclass[\jvar{misc.language},a4paper,nototpages]{europasscv}
 
 \ecvname{\jvar{personal.name}}
 \ecvaddress{\jvar{personal.address}, \jvar{personal.city}, \jvar{personal.country}}
@@ -10,13 +10,11 @@
 
 \ecvdateofbirth{\jvar{personal.birth_date}}
 \ecvnationality{\jvar{personal.nationality}}
-% \ecvgender{}
 
 \ecvpicture[width=3.8cm]{\jvar{personal.image}}
 
 \begin{document}
     \begin{europasscv}
-
         \ecvpersonalinfo
         % \ecvbigitem{Job applied for}{European project manager}
 
@@ -28,36 +26,24 @@
         \jblock{endfor}
 
         \ecvsection{\jvar{education.school.label}}
-        \jblock{for entry in education.school.entries }
+        \jblock{for entry in education.school.entries}
             \ecvtitlelevel{\jvar{entry.date}}{\jvar{entry.program}}{}
             \ecvitem{}{\jvar{entry.school}}
         \jblock{endfor}
 
         \ecvsection{\jvar{education.research.label}}
-        \jblock{ for entry in education.research.entries }
+        \jblock{for entry in education.research.entries }
             \ecvtitlelevel{\jvar{entry.date}}{\jvar{entry.title}}{}
             \jblock{if entry.researchers}
                 \ecvitem{}{\jvar{entry.researchers|join(', ')}}
             \jblock{endif}
         \jblock{endfor}
 
-        \ecvsection{\jvar{skills.label}}
-
-        \ecvblueitem{\jvar{skills.networking.label}}{
-            \begin{ecvitemize}
-                \jblock{for entry in skills.networking.entries}
-                    \item \jvar{entry.category}: \textit{\jvar{entry.entries|join(', ')}}
-                \jblock{endfor}
-            \end{ecvitemize}
-        }
-
-        \ecvblueitem{\jvar{skills.coding.label}}{
-            \begin{ecvitemize}
-                \jblock{for entry in skills.coding.entries}
-                    \item \jvar{entry.category}: \textit{\jvar{entry.entries|join(', ')}}
-                \jblock{endfor}
-            \end{ecvitemize}
-        }
+        \ecvsection{\jvar{programming.label}}
+        \jblock{for entry in programming.entries}
+            \ecvtitlelevel{}{\jvar{entry.category}}{}
+            \ecvitem{}{\jvar{entry.entries|join(', ')}}
+        \jblock{endfor}
 
         \ecvmothertongue{\jvar{personal.nationality}}
         \ecvlanguageheader
