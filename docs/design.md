@@ -1,6 +1,8 @@
 # Design
 
-The first issue I faced was about few companies being very strict on the allowed CV format, hence asking for the [EuroPass](https://europass.cedefop.europa.eu/it/documents/curriculum-vitae/templates-instructions/templates/doc) one, for example. On the other hand, I really enjoyed _my_ custom format and didn't want to just drop it. And what if another company would have come asking for a CV formatted following another format?
+The first issue I faced was about few companies being very strict on the allowed CV format, hence asking for the [EuroPass](https://europass.cedefop.europa.eu/it/documents/curriculum-vitae/templates-instructions/templates/doc) one, for example.
+On the other hand, I really enjoyed _my_ custom format and didn't want to just drop it.
+And what if another company would have come asking for a CV formatted following another format?
 
 All of this led me considering templating my documents: many `tex` files as many formats I wanted to support and a single _database_ file keeping the information used to fill the templates.
 
@@ -10,9 +12,11 @@ After a first round in which I did implement all the features on my own (look at
 
 ## Templating
 
-Different formats, or templates, are to be made and accessing same data based on a sort of identifiers. Despite how simple this issue could look, it's definitely not, at least if you want to keep something to be somehow proud.
+Different formats, or templates, are to be made and accessing same data based on a sort of identifiers.
+Despite how simple this issue could look, it's definitely not, at least if you want to keep something to be somehow proud.
 
-Looking for a nice way to replace my old and misfiring templating engine, I discovered [jinja](https://jinja.palletsprojects.com/). This library allows you to define `block_start_string`, `variable_start_string` and many other nice things to make it able to detect where exactly in your template you want placeholders and identifiers to be replaced with actual content.
+Looking for a nice way to replace my old and misfiring templating engine, I discovered [jinja](https://jinja.palletsprojects.com/).
+This library allows you to define `block_start_string`, `variable_start_string` and many other nice things to make it able to detect where exactly in your template you want placeholders and identifiers to be replaced with actual content.
 
 This scales really good for LaTeX documents, actually:
 
@@ -61,7 +65,8 @@ streambinder's CV.
 \end{document}
 ```
 
-Making the engine take the rendering parameters from a database file was pretty easy, too. The same result above can be achieved the following way:
+Making the engine take the rendering parameters from a database file was pretty easy, too.
+The same result above can be achieved the following way:
 
 ```python
 with open('database.yaml', 'r') as database_fd:
