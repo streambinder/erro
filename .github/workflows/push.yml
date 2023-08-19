@@ -9,20 +9,51 @@ on:
     - master
 
 jobs:
-  lint:
+  commitlint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Lint codebase
-        uses: docker://github/super-linter:latest
+      - uses: wagoid/commitlint-github-action@v5
+  codespell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: codespell-project/actions-codespell@v2
+        with:
+          check_filenames: true
+          ignore_words_list: erro
+          skip: it.yml
+  super-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: docker://github/super-linter:latest
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_ERRO }}
           VALIDATE_ALL_CODEBASE: false
+  notify-doc:
+    needs: [commitlint,codespell,super-linter]
+    if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            docs:
+              - 'docs/**'
+      - uses: peter-evans/repository-dispatch@v2
+        if: steps.filter.outputs.docs == 'true'
+        with:
+          token: ${{ secrets.GH_ACTIONS_ERRO }}
+          repository: streambinder/streambinder
+          event-type: doc-sync
+          client-payload: '{"repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
   build:
-    needs: [lint]
+    needs: [commitlint,codespell,super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
@@ -58,8 +89,8 @@ jobs:
           prerelease: false
           title: ${{ steps.date.outputs.today }}
           files: build/*
-  notify:
-    needs: [lint,build]
+  notify-release:
+    needs: [build]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
