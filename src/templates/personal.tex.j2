@@ -53,8 +53,8 @@
 \end{spacing}
 \begin{tabular}{R{2.5cm} L{14.5cm}}
 	\jblock{for entry in work.entries}
-		\textcolor{lightgray}{\jvar{entry.from} --- \jvar{entry.to}} &
-			\textbf{\jvar{entry.role}}, \textit{\jvar{entry.company}} \linebreak
+		\textcolor{lightgray}{\jvar{entry.from} -- \jvar{entry.to}} &
+			\textbf{\jvar{entry.role}} -- \textit{\jvar{entry.company}} \linebreak
 			\jvar{entry.description} \\ \hfill
 	\jblock{endfor}
 \end{tabular}
@@ -89,8 +89,9 @@
 \end{spacing}
 \begin{tabular}{R{2.5cm} L{14.5cm}}
 	\jblock{for entry in projects.entries}
-		\textcolor{lightgray}{\jvar{entry.from} --- \jvar{entry.to}} &
-			\textbf{\jvar{entry.name}}, \textit{\jvar{entry.members|join(', ')}} \linebreak
+		\textcolor{lightgray}{\jvar{entry.from} -- \jvar{entry.to}} &
+			\textbf{\jvar{entry.name}}  \linebreak
+			\textit{\jvar{entry.members|join(', ')}} \linebreak
 			\jvar{entry.description} \\ \hfill
 	\jblock{endfor}
 \end{tabular}
