@@ -110,6 +110,7 @@ programming:
       entries:
         - Ruby
         - SQL
+        - Rust
     - category: Intermediate
       entries:
         - C
