@@ -113,7 +113,7 @@ programming:
     - category: Intermediate
       entries:
         - C
-        - PHP
+        - PHP/Hack
         - LaTeX
         - Java/TypeScript
         - ASM MIPS
