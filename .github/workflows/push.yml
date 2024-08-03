@@ -45,7 +45,7 @@ jobs:
           filters: |
             docs:
               - 'docs/**'
-      - uses: peter-evans/repository-dispatch@v2
+      - uses: peter-evans/repository-dispatch@v3
         if: steps.filter.outputs.docs == 'true'
         with:
           token: ${{ secrets.GH_ACTIONS_ERRO }}
@@ -95,7 +95,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch push event
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.GH_ACTIONS_ERRO }}
           repository: streambinder/streambinder
