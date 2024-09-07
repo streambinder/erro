@@ -3,10 +3,12 @@ name: push
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - master
+      - master
+
+permissions: read-all
 
 jobs:
   commitlint:
@@ -29,12 +31,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: docker://github/super-linter:latest
+      - uses: super-linter/super-linter@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_ERRO }}
           VALIDATE_ALL_CODEBASE: false
   notify-doc:
-    needs: [commitlint,codespell,super-linter]
+    needs: [commitlint, codespell, super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
@@ -53,7 +55,7 @@ jobs:
           event-type: doc-sync
           client-payload: '{"repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
   build:
-    needs: [commitlint,codespell,super-linter]
+    needs: [commitlint, codespell, super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
