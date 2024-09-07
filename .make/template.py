@@ -2,7 +2,6 @@
 
 import glob
 import os
-from distutils.dir_util import copy_tree
 
 import jinja2
 import yaml
@@ -46,30 +45,28 @@ j_envs = {
 }
 
 if os.path.isdir("src/assets"):
-    copy_tree("src/assets", "{}".format(os.environ["BUILD_DIR"]))
+    os.system(f"cp -rf src/assets {os.environ['BUILD_DIR']}")
 
 for config in glob.glob("src/langs/*.yml"):
     lang = config.split(os.path.sep)[-1].split(".yml")[0]
-    config_lang = None
-    with open(config, "r") as config_fd:
+    CONFIG_LANG = None
+    with open(config, "r", encoding="utf-8") as config_fd:
         try:
-            config_lang = yaml.safe_load(config_fd)
+            CONFIG_LANG = yaml.safe_load(config_fd)
         except yaml.YAMLError as e:
             print(e)
 
-    if config_lang is None:
-        print("unable to parse {}".format(config))
+    if CONFIG_LANG is None:
+        print(f"unable to parse {config}")
         continue
 
     for template in glob.glob("src/templates/*.j2"):
         t_format = template.split(".")[-2]
         if t_format not in j_envs:
-            print("template format {} not supported".format(t_format))
+            print(f"template format {t_format} not supported")
             continue
 
-        t_name = template.split(os.path.sep)[-1].split(".{}".format(t_format))[0]
-        j_envs[t_format].get_template(template).stream(config_lang).dump(
-            "{}/templates/{}_{}.{}".format(
-                os.environ["BUILD_DIR"], t_name, lang, t_format
-            )
+        t_name = template.split(os.path.sep)[-1].split(f".{t_format}")[0]
+        j_envs[t_format].get_template(template).stream(CONFIG_LANG).dump(
+            f"{os.environ['BUILD_DIR']}/templates/{t_name}_{lang}.{t_format}"
         )
