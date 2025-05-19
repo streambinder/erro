@@ -1,25 +1,15 @@
 name: push
 
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+on: # yamllint disable-line rule:truthy
+  push: null
+  pull_request: null
 
 permissions:
   contents: read
+  packages: read
   statuses: write
 
 jobs:
-  commitlint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v5
   codespell:
     runs-on: ubuntu-latest
     steps:
@@ -35,12 +25,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: super-linter/super-linter@latest
+      - run: ln -sv .github/linters/commitlint.config.js ./
+      - uses: super-linter/super-linter/slim@v7.4.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_ERRO }}
-          VALIDATE_ALL_CODEBASE: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: ${{ !contains(github.event_name, 'pull_request') }}
   notify-doc:
-    needs: [commitlint, codespell, super-linter]
+    needs: [codespell, super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
@@ -54,12 +45,12 @@ jobs:
       - uses: peter-evans/repository-dispatch@v3
         if: steps.filter.outputs.docs == 'true'
         with:
-          token: ${{ secrets.GH_ACTIONS_ERRO }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           repository: streambinder/streambinder
           event-type: doc-sync
           client-payload: '{"repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
   build:
-    needs: [commitlint, codespell, super-linter]
+    needs: [codespell, super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
@@ -90,7 +81,7 @@ jobs:
       - name: Release
         uses: slord399/action-automatic-releases@v1.0.1
         with:
-          repo_token: ${{ secrets.GH_ACTIONS_ERRO }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           automatic_release_tag: ${{ steps.date.outputs.today }}
           prerelease: false
           title: ${{ steps.date.outputs.today }}
@@ -103,7 +94,7 @@ jobs:
       - name: Dispatch push event
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.GH_ACTIONS_ERRO }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           repository: streambinder/streambinder
           event-type: erro-sync
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
