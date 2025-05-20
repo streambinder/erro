@@ -5,8 +5,19 @@ on: # yamllint disable-line rule:truthy
   pull_request: null
 
 permissions:
-  contents: read
+  actions: read
+  attestations: none
+  checks: none
+  contents: write
+  deployments: none
+  id-token: none
+  issues: none
+  discussions: none
   packages: read
+  pages: none
+  pull-requests: read
+  repository-projects: none
+  security-events: none
   statuses: write
 
 jobs:
