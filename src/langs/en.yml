@@ -106,11 +106,12 @@ projects:
 programming:
   label: Programming
   entries:
-    - category: Basic
+    - category: Advanced
       entries:
-        - Ruby
-        - SQL
-        - Rust
+        - Java
+        - Python
+        - Bash
+        - Go
     - category: Intermediate
       entries:
         - C
@@ -118,12 +119,11 @@ programming:
         - LaTeX
         - Java/TypeScript
         - ASM MIPS
-    - category: Advanced
+    - category: Basic
       entries:
-        - Java
-        - Python
-        - Bash
-        - Go
+        - Ruby
+        - SQL
+        - Rust
 
 languages:
   label: Languages
