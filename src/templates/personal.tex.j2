@@ -41,9 +41,9 @@
 		\textit{
 			\color{lightergray}\faPhone\color{black} \hspace{1mm} \jvar{personal.phone} \linebreak
 			\color{lightergray}\faCalendar\color{black} \hspace{1mm} \jvar{personal.birth_date} \linebreak
-			\color{lightergray}\faEnvelope\color{black} \hspace{1mm} \href{mailto:\jvar{personal.email}}{\jvar{personal.email}} \linebreak
-			\color{lightergray}\faGithubSquare\color{black} \hspace{1mm} \href{\jvar{personal.url_github}}{\jvar{personal.url_github_abbr}} \linebreak
-			\color{lightergray}\faLinkedinSquare\color{black} \hspace{1mm} \href{\jvar{personal.url_linkedin}}{\jvar{personal.url_linkedin_abbr}} \linebreak
+			\color{lightergray}\faEnvelope\color{black} \hspace{1mm} \href{mailto:\jvar{personal.email}}{\jvar{personal.email} \scriptsize{\faExternalLink}} \linebreak
+			\color{lightergray}\faGithubSquare\color{black} \hspace{1mm} \href{\jvar{personal.url_github}}{\jvar{personal.url_github_abbr} \scriptsize{\faExternalLink}} \linebreak
+			\color{lightergray}\faLinkedinSquare\color{black} \hspace{1mm} \href{\jvar{personal.url_linkedin}}{\jvar{personal.url_linkedin_abbr} \scriptsize{\faExternalLink}} \linebreak
 			\color{lightergray}\faHome\color{black} \hspace{1mm} \jvar{personal.address}, \jvar{personal.city}, \jvar{personal.country}\linebreak
 		}
 \end{tabular} \\\\\\
@@ -76,7 +76,7 @@
 		\jblock{for entry in education.research.entries}
 			\textcolor{lightgray}{\jvar{entry.date}} &
 				\jblock{if entry.url}
-				\textbf{\href{\jvar{entry.url}}{\jvar{entry.title}} \tiny{\faExternalLink}}
+				\textbf{\href{\jvar{entry.url}}{\jvar{entry.title} \scriptsize{\faExternalLink}}}
 				\jblock{else}
 				\textbf{\jvar{entry.title}}
 				\jblock{endif}
@@ -97,7 +97,7 @@
 \begin{tabular}{R{2.5cm} L{14.5cm}}
 	\jblock{for entry in projects.entries}
 		\textcolor{lightgray}{\jvar{entry.from} -- \jvar{entry.to}} &
-			\textbf{\href{\jvar{entry.url}}{\jvar{entry.name}} \tiny{\faExternalLink}}  \linebreak
+			\textbf{\href{\jvar{entry.url}}{\jvar{entry.name} \scriptsize{\faExternalLink}}}  \linebreak
 			\textit{\jvar{entry.members|join(', ')}} \linebreak
 			\jvar{entry.description} \\ \hfill
 	\jblock{endfor}

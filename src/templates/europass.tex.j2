@@ -36,7 +36,7 @@
         \ecvsection{\jvar{education.research.label}}
         \jblock{for entry in education.research.entries }
             \jblock{if entry.url}
-            \ecvtitlelevel{\jvar{entry.date}}{\href{\jvar{entry.url}}{\jvar{entry.title}} \tiny{\faExternalLink}}{}
+            \ecvtitlelevel{\jvar{entry.date}}{\href{\jvar{entry.url}}{\jvar{entry.title} \scriptsize{\faExternalLink}}}{}
             \jblock{else}
             \ecvtitlelevel{\jvar{entry.date}}{\jvar{entry.title}}{}
             \jblock{endif}
