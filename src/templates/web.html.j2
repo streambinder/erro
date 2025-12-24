@@ -74,8 +74,18 @@
                 </td>
                 <td>
                     <b>
+                        <jblock if entry.url />
+                        <a href="<jvar entry.url />">
+                            <jvar entry.title />
+                        </a>
+                        <jblock else />
                         <jvar entry.title />
+                        <jblock endif />
                     </b>
+                    <jblock if entry.oneliner />
+                    <br>
+                    <jvar entry.oneliner />
+                    <jblock endif />
                     <br>
                     <i>
                         <jvar entry.researchers|join(', ') />

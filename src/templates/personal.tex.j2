@@ -75,7 +75,14 @@
 	\begin{tabular}{R{1cm} L{8cm}}
 		\jblock{for entry in education.research.entries}
 			\textcolor{lightgray}{\jvar{entry.date}} &
+				\jblock{if entry.url}
+				\textbf{\href{\jvar{entry.url}}{\jvar{entry.title}}}
+				\jblock{else}
 				\textbf{\jvar{entry.title}}
+				\jblock{endif}
+				\jblock{if entry.oneliner}
+					\linebreak \jvar{entry.oneliner}
+				\jblock{endif}
 				\jblock{if entry.researchers}
 					\linebreak \textit{\jvar{entry.researchers|join(', ')}}
 				\jblock{endif}

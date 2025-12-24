@@ -33,7 +33,14 @@
 
         \ecvsection{\jvar{education.research.label}}
         \jblock{for entry in education.research.entries }
+            \jblock{if entry.url}
+            \ecvtitlelevel{\jvar{entry.date}}{\href{\jvar{entry.url}}{\jvar{entry.title}}}{}
+            \jblock{else}
             \ecvtitlelevel{\jvar{entry.date}}{\jvar{entry.title}}{}
+            \jblock{endif}
+            \jblock{if entry.oneliner}
+                \ecvitem{}{\jvar{entry.oneliner}}
+            \jblock{endif}
             \jblock{if entry.researchers}
                 \ecvitem{}{\jvar{entry.researchers|join(', ')}}
             \jblock{endif}

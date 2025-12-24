@@ -70,20 +70,30 @@ education:
     label: Research
     entries:
       - title: "Monitoring EVPN-VxLAN fabric with BMP"
+        url: "https://rp.os3.nl/2019-2020/p77/report.pdf"
+        oneliner: "BMP-based monitoring suite for EVPN fabrics to improve data center visibility and troubleshooting"
         researchers:
           - Giacomo Casoni
         date: 2020
       - title: "Agnostic embedding of digital signatures"
+        url: ""
+        oneliner: ""
         researchers:
           - Sean Liao
         date: 2020
       - title: "Audio Steganography: a Deep Learning Approach"
+        url: ""
+        oneliner: ""
         researchers:
           - Philippe Partarrieu
         date: 2020
       - title: BGP Flow-Spec for distributed micro-segmentation
+        url: "https://rp.os3.nl/2019-2020/p53/report.pdf"
+        oneliner: "Adoption of BGP Flow Specification for distributing micro-segmentation policies in modern data centers"
         date: 2020
       - title: "REVCON: Reverse Network Reconnaissance"
+        url: ""
+        oneliner: ""
         researchers:
           - Paul Dunn
           - Philipp Mieden

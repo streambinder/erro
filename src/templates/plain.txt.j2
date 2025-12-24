@@ -19,7 +19,7 @@
 {{ "-"*(education.research.label|length) }}
 
 {% for entry in education.research.entries %}
-- {{ entry.title }}{% if entry.researchers|length > 0 %} ({{ entry.researchers|join(', ') }}){% endif %}
+- {{ entry.title }}{% if entry.url %} ({{ entry.url }}){% endif %}{% if entry.researchers|length > 0 %} ({{ entry.researchers|join(', ') }}){% endif %}{% if entry.oneliner %}: {{ entry.oneliner }}{% endif %}
 
 {% endfor %}
 
