@@ -41,6 +41,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: ${{ !contains(github.event_name, 'pull_request') }}
+          VALIDATE_JSCPD: false
   notify-doc:
     needs: [codespell, super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
