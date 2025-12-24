@@ -2,6 +2,8 @@
 
 \documentclass[\jvar{misc.language},a4paper,nototpages]{europasscv}
 
+\usepackage{fontawesome}
+
 \ecvname{\jvar{personal.name}}
 \ecvaddress{\jvar{personal.address}, \jvar{personal.city}, \jvar{personal.country}}
 \ecvtelephone[\jvar{personal.phone}]{}
@@ -34,7 +36,7 @@
         \ecvsection{\jvar{education.research.label}}
         \jblock{for entry in education.research.entries }
             \jblock{if entry.url}
-            \ecvtitlelevel{\jvar{entry.date}}{\href{\jvar{entry.url}}{\jvar{entry.title}}}{}
+            \ecvtitlelevel{\jvar{entry.date}}{\href{\jvar{entry.url}}{\jvar{entry.title}} \tiny{\faExternalLink}}{}
             \jblock{else}
             \ecvtitlelevel{\jvar{entry.date}}{\jvar{entry.title}}{}
             \jblock{endif}
