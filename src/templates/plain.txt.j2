@@ -27,7 +27,7 @@
 {{ "-"*(projects.label|length) }}
 
 {% for entry in projects.entries %}
-- {{ entry.name }} ({{ entry.from }} – {{ entry.to }}){% if entry.members|length > 0 %}({{ entry.members|join(', ') }}){% endif %}: {{ entry.description }}
+- {{ entry.name }} ({{ entry.url }}) ({{ entry.from }} – {{ entry.to }}){% if entry.members|length > 0 %}({{ entry.members|join(', ') }}){% endif %}: {{ entry.description }}
 {% endfor %}
 
 {{ programming.label }}

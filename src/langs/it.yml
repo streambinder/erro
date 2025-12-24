@@ -94,6 +94,7 @@ projects:
   label: Progetti
   entries:
     - name: MoltenMotherBoard
+      url: https://github.com/moltenmotherboard
       members:
         - Marco Panunzio
         - Giovanni Santini

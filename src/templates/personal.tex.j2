@@ -90,7 +90,7 @@
 \begin{tabular}{R{2.5cm} L{14.5cm}}
 	\jblock{for entry in projects.entries}
 		\textcolor{lightgray}{\jvar{entry.from} -- \jvar{entry.to}} &
-			\textbf{\jvar{entry.name}}  \linebreak
+			\textbf{\href{\jvar{entry.url}}{\jvar{entry.name}}}  \linebreak
 			\textit{\jvar{entry.members|join(', ')}} \linebreak
 			\jvar{entry.description} \\ \hfill
 	\jblock{endfor}
