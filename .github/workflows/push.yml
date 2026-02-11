@@ -20,6 +20,10 @@ permissions:
   security-events: none
   statuses: write
 
+concurrency: # prevent concurrent tag/release
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   codespell:
     runs-on: ubuntu-latest
