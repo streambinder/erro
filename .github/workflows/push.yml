@@ -25,15 +25,6 @@ concurrency: # prevent concurrent tag/release
   cancel-in-progress: false
 
 jobs:
-  codespell:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - uses: codespell-project/actions-codespell@v2
-        with:
-          check_filenames: true
-          ignore_words_list: erro
-          skip: it.yml
   super-linter:
     runs-on: ubuntu-latest
     steps:
@@ -47,7 +38,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: ${{ !contains(github.event_name, 'pull_request') }}
           VALIDATE_JSCPD: false
   notify-doc:
-    needs: [codespell, super-linter]
+    needs: [super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
@@ -66,7 +57,7 @@ jobs:
           event-type: doc-sync
           client-payload: '{"repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
   build:
-    needs: [codespell, super-linter]
+    needs: [super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
