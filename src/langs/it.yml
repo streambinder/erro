@@ -21,7 +21,7 @@ work:
       from: 2022
       to: presente
       description: >-
-        Realizzo e gestisco sistemi e strumenti ad-hoc che possano supportare i team interni di Meta in tutto il mondo.
+        Realizzo sistemi e strumenti enterprise per i team interni di Meta in tutto il mondo, progettando e integrando funzionalità basate su LLM — tra cui retrieval-augmented generation e workflow agentici — per abilitare capacità intelligenti e adattive su infrastrutture complesse.
     - role: Systems Development Area Leader
       company: Immobiliare.it S.p.A.
       from: 2021
@@ -115,7 +115,7 @@ projects:
       to: 2014
 
 programming:
-  label: Programmazione
+  label: Competenze tecniche
   entries:
     - category: Avanzato
       entries:
@@ -135,6 +135,12 @@ programming:
         - Ruby
         - SQL
         - Rust
+    - category: Integrazione AI/LLM
+      entries:
+        - Retrieval-Augmented Generation
+        - Workflow Agentici
+        - Inferenza LLM Strutturata
+        - Retrieval basato su Embedding
 
 languages:
   label: Lingue

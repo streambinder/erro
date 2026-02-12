@@ -21,7 +21,7 @@ work:
       from: 2022
       to: present
       description: >-
-        Building custom, cutting-edge systems and tools that securely support and empower the Meta internal teams around the world.
+        Building custom enterprise systems and tools for Meta's internal teams worldwide, designing and integrating LLM-driven features — including retrieval-augmented generation and agentic workflows — to enable intelligent, adaptive capabilities across complex infrastructure.
     - role: Systems Development Area Leader
       company: Immobiliare.it S.p.A.
       from: 2021
@@ -115,7 +115,7 @@ projects:
       to: 2014
 
 programming:
-  label: Programming
+  label: Technical skills
   entries:
     - category: Advanced
       entries:
@@ -135,6 +135,12 @@ programming:
         - Ruby
         - SQL
         - Rust
+    - category: AI/LLM Integration
+      entries:
+        - Retrieval-Augmented Generation
+        - Agentic Workflows
+        - Structured LLM Inference
+        - Embedding-based Retrieval
 
 languages:
   label: Languages
