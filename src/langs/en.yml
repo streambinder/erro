@@ -117,25 +117,22 @@ projects:
 programming:
   label: Technical skills
   entries:
-    - category: Advanced
+    - category: Fluent
       entries:
-        - Java
         - Python
         - Bash
         - Go
-    - category: Intermediate
+        - PHP/Hack
+        - Rust
+    - category: Familiar
       entries:
         - C
-        - PHP/Hack
+        - Java
         - LaTeX
-        - Java/TypeScript
-        - ASM MIPS
-    - category: Basic
-      entries:
+        - JavaScript/TypeScript
         - Ruby
         - SQL
-        - Rust
-    - category: AI/LLM Integration
+    - category: AI/LLM
       entries:
         - Retrieval-Augmented Generation
         - Agentic Workflows

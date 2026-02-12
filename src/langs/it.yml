@@ -117,25 +117,22 @@ projects:
 programming:
   label: Competenze tecniche
   entries:
-    - category: Avanzato
+    - category: Fluente
       entries:
-        - Java
         - Python
         - Bash
         - Go
-    - category: Intermedio
+        - PHP/Hack
+        - Rust
+    - category: Familiare
       entries:
         - C
-        - PHP/Hack
+        - Java
         - LaTeX
-        - Java/TypeScript
-        - ASM MIPS
-    - category: Base
-      entries:
+        - JavaScript/TypeScript
         - Ruby
         - SQL
-        - Rust
-    - category: Integrazione AI/LLM
+    - category: AI/LLM
       entries:
         - Retrieval-Augmented Generation
         - Workflow Agentici
