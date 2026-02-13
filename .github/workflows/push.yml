@@ -8,7 +8,7 @@ permissions:
   actions: read
   attestations: none
   checks: none
-  contents: write
+  contents: read
   deployments: none
   id-token: none
   issues: none
@@ -18,7 +18,7 @@ permissions:
   pull-requests: read
   repository-projects: none
   security-events: none
-  statuses: write
+  statuses: none
 
 concurrency: # prevent concurrent tag/release
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -27,29 +27,36 @@ concurrency: # prevent concurrent tag/release
 jobs:
   super-linter:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      statuses: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           fetch-depth: 0
+          persist-credentials: false
       - run: ln -sv .github/linters/commitlint.config.js ./
-      - uses: super-linter/super-linter/slim@v7.4.0
+      - uses: super-linter/super-linter/slim@47984f49b4e87383eed97890fe2dca6063bbd9c3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: ${{ !contains(github.event_name, 'pull_request') }}
           VALIDATE_JSCPD: false
+          VALIDATE_JAVASCRIPT_ES: false
   notify-doc:
     needs: [super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: dorny/paths-filter@v3
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36
         id: filter
         with:
           filters: |
             docs:
               - 'docs/**'
-      - uses: peter-evans/repository-dispatch@v4
+      - uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697
         if: steps.filter.outputs.docs == 'true'
         with:
           token: ${{ secrets.REPOSITORY_DISPATCH_STREAMBINDER }}
@@ -60,11 +67,15 @@ jobs:
     needs: [super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
       - name: Setup Python environment
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
         with:
           python-version: 3.8.12
           architecture: x64
@@ -78,7 +89,7 @@ jobs:
       - name: Build
         run: make
       - name: Upload artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
         with:
           name: resume
           path: build/*
@@ -86,7 +97,7 @@ jobs:
         id: date
         run: echo today="$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
       - name: Release
-        uses: slord399/action-automatic-releases@v1.0.1
+        uses: slord399/action-automatic-releases@3fdffd6528ada5ca6b76ad10a3ecf03ccd168b33
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           automatic_release_tag: ${{ steps.date.outputs.today }}
@@ -99,7 +110,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch push event
-        uses: peter-evans/repository-dispatch@v4
+        uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697
         with:
           token: ${{ secrets.REPOSITORY_DISPATCH_STREAMBINDER }}
           repository: streambinder/streambinder
