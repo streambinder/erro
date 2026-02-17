@@ -1,4 +1,4 @@
 [codespell]
 check-filenames =
 ignore-words-list = erro
-skip = it.yml
+skip = */it.yml
