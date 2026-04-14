@@ -46,6 +46,7 @@ jobs:
     needs: [super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    environment: streambinder-dispatch
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
@@ -108,6 +109,7 @@ jobs:
     needs: [build]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    environment: streambinder-dispatch
     steps:
       - name: Dispatch push event
         uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697
