@@ -98,13 +98,35 @@ jobs:
         id: date
         run: echo today="$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
       - name: Release
-        uses: slord399/action-automatic-releases@3fdffd6528ada5ca6b76ad10a3ecf03ccd168b33
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          automatic_release_tag: ${{ steps.date.outputs.today }}
-          prerelease: false
-          title: ${{ steps.date.outputs.today }}
-          files: build/*
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG_NAME: ${{ steps.date.outputs.today }}
+        run: |
+          set -euo pipefail
+
+          api="repos/${GITHUB_REPOSITORY}"
+
+          # Keep a single daily release tag, updating it when multiple pushes land the same day.
+          if gh api "${api}/git/ref/tags/${TAG_NAME}" >/dev/null 2>&1; then
+            gh api \
+              --method PATCH \
+              "${api}/git/refs/tags/${TAG_NAME}" \
+              -f sha="${GITHUB_SHA}" \
+              -F force=true
+          else
+            gh api \
+              --method POST \
+              "${api}/git/refs" \
+              -f ref="refs/tags/${TAG_NAME}" \
+              -f sha="${GITHUB_SHA}"
+          fi
+
+          if gh release view "${TAG_NAME}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+            gh release edit "${TAG_NAME}" --repo "${GITHUB_REPOSITORY}" --title "${TAG_NAME}"
+            gh release upload "${TAG_NAME}" build/* --repo "${GITHUB_REPOSITORY}" --clobber
+          else
+            gh release create "${TAG_NAME}" build/* --repo "${GITHUB_REPOSITORY}" --title "${TAG_NAME}" --target "${GITHUB_SHA}"
+          fi
   notify-release:
     needs: [build]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
