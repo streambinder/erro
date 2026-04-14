@@ -105,6 +105,12 @@ jobs:
           set -euo pipefail
 
           api="repos/${GITHUB_REPOSITORY}"
+          mapfile -d '' release_files < <(find build -maxdepth 1 -type f -print0 | sort -z)
+
+          if [ "${#release_files[@]}" -eq 0 ]; then
+            echo "No release files found in build/"
+            exit 1
+          fi
 
           # Keep a single daily release tag, updating it when multiple pushes land the same day.
           if gh api "${api}/git/ref/tags/${TAG_NAME}" >/dev/null 2>&1; then
@@ -123,9 +129,9 @@ jobs:
 
           if gh release view "${TAG_NAME}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
             gh release edit "${TAG_NAME}" --repo "${GITHUB_REPOSITORY}" --title "${TAG_NAME}"
-            gh release upload "${TAG_NAME}" build/* --repo "${GITHUB_REPOSITORY}" --clobber
+            gh release upload "${TAG_NAME}" "${release_files[@]}" --repo "${GITHUB_REPOSITORY}" --clobber
           else
-            gh release create "${TAG_NAME}" build/* --repo "${GITHUB_REPOSITORY}" --title "${TAG_NAME}" --target "${GITHUB_SHA}"
+            gh release create "${TAG_NAME}" "${release_files[@]}" --repo "${GITHUB_REPOSITORY}" --title "${TAG_NAME}" --target "${GITHUB_SHA}"
           fi
   notify-release:
     needs: [build]
