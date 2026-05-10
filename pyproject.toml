@@ -1,0 +1,18 @@
+[project]
+name = "erro"
+version = "0.1.0"
+description = "Multi-format CV/resume generator"
+readme = ".github/README.md"
+requires-python = ">=3.13"
+license = { text = "GPL-3.0-or-later" }
+dependencies = [
+  "Jinja2",
+  "PyYAML",
+]
+
+[tool.uv]
+package = false
+
+[tool.mypy]
+# phase-2 follow-up: enable strict mode + full annotations per unciae/ai/README.md §21.7
+strict = false

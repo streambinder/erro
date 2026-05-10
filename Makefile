@@ -14,7 +14,7 @@ init:
 
 .PHONY: template
 template: init
-	@python3 $(MAKE_DIR)/template.py
+	@uv run python $(MAKE_DIR)/template.py
 
 .PHONY: render
 render: template

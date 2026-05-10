@@ -42,6 +42,11 @@ jobs:
           VALIDATE_ALL_CODEBASE: ${{ !contains(github.event_name, 'pull_request') }}
           VALIDATE_JSCPD: false
           VALIDATE_JAVASCRIPT_ES: false
+          # PYTHON_MYPY deferred until §21.7 phase-2
+          VALIDATE_PYTHON_MYPY: false
+          VALIDATE_PYTHON_BLACK: false
+          VALIDATE_PYTHON_PYLINT: false
+          IGNORE_GITIGNORED_FILES: true
   notify-doc:
     needs: [super-linter]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'

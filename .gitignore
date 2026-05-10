@@ -6,4 +6,5 @@
 *missfont.log
 build
 venv
+.venv
 .DS_Store
