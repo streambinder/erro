@@ -10,9 +10,15 @@ dependencies = [
   "PyYAML",
 ]
 
+[dependency-groups]
+dev = [
+  "mypy",
+  "types-PyYAML",
+]
+
 [tool.uv]
 package = false
 
 [tool.mypy]
-# phase-2 follow-up: enable strict mode + full annotations per unciae/ai/README.md §21.7
-strict = false
+strict = true
+files = [".make"]

@@ -42,13 +42,25 @@ jobs:
           VALIDATE_ALL_CODEBASE: ${{ !contains(github.event_name, 'pull_request') }}
           VALIDATE_JSCPD: false
           VALIDATE_JAVASCRIPT_ES: false
-          # PYTHON_MYPY deferred until §21.7 phase-2
+          # mypy runs in its own job so it can use the project's uv venv
           VALIDATE_PYTHON_MYPY: false
           VALIDATE_PYTHON_BLACK: false
           VALIDATE_PYTHON_PYLINT: false
           IGNORE_GITIGNORED_FILES: true
+  mypy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        with:
+          version: 0.11.12
+      - run: |
+          uv sync --frozen
+          uv run mypy --strict
   notify-doc:
-    needs: [super-linter]
+    needs: [super-linter, mypy]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     environment: streambinder-dispatch
@@ -70,7 +82,7 @@ jobs:
           event-type: doc-sync
           client-payload: '{"repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
   build:
-    needs: [super-linter]
+    needs: [super-linter, mypy]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     permissions:
