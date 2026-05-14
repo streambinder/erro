@@ -32,6 +32,15 @@
                     </i>
                     <br>
                     <jvar entry.description />
+                    <jblock if entry.highlights />
+                    <ul>
+                        <jblock for highlight in entry.highlights />
+                        <li>
+                            <jvar highlight />
+                        </li>
+                        <jblock endfor />
+                    </ul>
+                    <jblock endif />
                 </td>
             </tr>
             <jblock endfor />

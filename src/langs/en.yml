@@ -2,16 +2,15 @@ personal:
   name: Davide Pucci
   phone: +39 3298580201
   email: posta@davidepucci.it
-  birth_date: 21st September 1995
+  birth_date: 21/09/1995
   address: Via Collalto Sabino 14
   city: Rome
   country: Italy
   nationality: Italian
   url_personal: https://davidepucci.it
+  url_personal_abbr: davidepucci.it
   url_github: https://github.com/streambinder
   url_github_abbr: github.com/streambinder
-  url_linkedin: https://linkedin.com/in/davide-pucci
-  url_linkedin_abbr: linkedin.com/in/davide-pucci
 
 work:
   label: Work experiences
@@ -21,7 +20,13 @@ work:
       from: 2022
       to: present
       description: >-
-        Building custom enterprise systems and tools for Meta's internal teams worldwide, designing and integrating LLM-driven features — including retrieval-augmented generation and agentic workflows — to enable intelligent, adaptive capabilities across complex infrastructure.
+        Part of the enterprise virtualization team responsible for Meta's corporate virtualization infrastructure — the multi-region fleet running internal engineering, IT, and corporate-systems workloads.
+      highlights:
+        - Founding member of the cross-team AI initiative pioneering autonomous operations across the enterprise department (~35 teams, ~1100 engineers); co-built the agent automating alert triage and resolution end-to-end.
+        - Ranked 1st in org by significant lines of code in both 2024 and 2025 — ~40% of the entire org's annual code production in 2025.
+        - "Designed and rolled out hypervisor patching automation with self-service VM relocation, cutting per-host drain turnaround from 3.5+ days to 1.9 days (45.8% time savings) and shrinking maintenance windows for downstream teams; led the multi-team project end-to-end, negotiating cross-team SLAs (4–24 hrs) with partner orgs."
+        - Replaced the legacy template-distribution daemon with the new framework, cutting OS template propagation from 4–5 days to 1–2 days (~60% faster) — accelerating fleet-wide OS rollouts and security patch adoption — and freeing 27 TB across the global virtualization control plane on the first production run.
+        - "As reliability champion for the team, stabilized the workflow framework in production: cut OOM-driven incidents by >99.7%, drastically reducing oncall burden, and deprecated a worker tier, freeing up resource requirements by 40%."
     - role: Systems Development Area Leader
       company: Immobiliare.it S.p.A.
       from: 2021
@@ -63,9 +68,6 @@ education:
       - program: B.Sc. Computer Science
         school: La Sapienza, University of Rome
         date: 2019
-      - program: Diploma in scientific studies
-        school: L.S.S. Amedeo Avogadro
-        date: 2014
   research:
     label: Research
     entries:
@@ -75,30 +77,10 @@ education:
         researchers:
           - Giacomo Casoni
         date: 2020
-      - title: "Agnostic embedding of digital signatures"
-        url: ""
-        oneliner: ""
-        researchers:
-          - Sean Liao
-        date: 2020
-      - title: "Audio Steganography: a Deep Learning Approach"
-        url: ""
-        oneliner: ""
-        researchers:
-          - Philippe Partarrieu
-        date: 2020
       - title: BGP Flow-Spec for distributed micro-segmentation
         url: "https://rp.os3.nl/2019-2020/p53/report.pdf"
         oneliner: "Adoption of BGP Flow Specification for distributing micro-segmentation policies in modern data centers"
         date: 2020
-      - title: "REVCON: Reverse Network Reconnaissance"
-        url: ""
-        oneliner: ""
-        researchers:
-          - Paul Dunn
-          - Philipp Mieden
-          - Axel Koolhaas
-        date: 2019
 
 projects:
   label: Projects
@@ -122,7 +104,7 @@ programming:
         - Python
         - Bash
         - Go
-        - PHP/Hack
+        - Hack
         - Rust
     - category: Familiar
       entries:
@@ -130,14 +112,9 @@ programming:
         - Java
         - LaTeX
         - JavaScript/TypeScript
+        - PHP
         - Ruby
         - SQL
-    - category: AI/LLM
-      entries:
-        - Retrieval-Augmented Generation
-        - Agentic Workflows
-        - Structured LLM Inference
-        - Embedding-based Retrieval
 
 languages:
   label: Languages
@@ -145,7 +122,7 @@ languages:
     - name: Italian
       proficiency: Native proficiency
     - name: English
-      proficiency: C2 read, C1 listen, B2 speak, B2 write — TOEFL iBT certified
+      proficiency: Professional working proficiency — TOEFL iBT certified
 
 misc:
   footnote: ""

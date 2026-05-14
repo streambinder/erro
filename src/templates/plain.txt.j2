@@ -6,7 +6,8 @@
 
 {% for entry in work.entries %}
 - {{ entry.role }} @{{ entry.company }} ({{ entry.from }} – {{ entry.to }}): {{ entry.description }}
-{% endfor %}
+{% if entry.highlights %}{% for highlight in entry.highlights %}    - {{ highlight }}
+{% endfor %}{% endif %}{% endfor %}
 
 {{ education.school.label }}
 {{ "-"*(education.school.label|length) }}

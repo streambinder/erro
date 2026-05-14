@@ -2,16 +2,15 @@ personal:
   name: Davide Pucci
   phone: +39 3298580201
   email: posta@davidepucci.it
-  birth_date: 21 Settembre 1995
+  birth_date: 21/09/1995
   address: Via Collalto Sabino 14
   city: Roma
   country: Italia
   nationality: Italiano
   url_personal: https://davidepucci.it
+  url_personal_abbr: davidepucci.it
   url_github: https://github.com/streambinder
   url_github_abbr: github.com/streambinder
-  url_linkedin: https://linkedin.com/in/davide-pucci
-  url_linkedin_abbr: linkedin.com/in/davide-pucci
 
 work:
   label: Esperienze lavorative
@@ -21,7 +20,13 @@ work:
       from: 2022
       to: presente
       description: >-
-        Realizzo sistemi e strumenti enterprise per i team interni di Meta in tutto il mondo, progettando e integrando funzionalità basate su LLM — tra cui retrieval-augmented generation e workflow agentici — per abilitare capacità intelligenti e adattive su infrastrutture complesse.
+        Membro del team responsabile dell'infrastruttura di virtualizzazione IT globale di Meta.
+      highlights:
+        - Membro fondatore dell'iniziativa AI cross-team per le autonomous operations nel dipartimento enterprise (~35 team, ~1100 ingegneri) e co-realizzatore del relativo AI agent per l'automatizzazione del triage e della risoluzione degli alert end-to-end.
+        - Primo per significant lines of code nel 2024 e nel 2025, raggiungendo individualmente il ~40% della produzione annuale di codice dell'organizzazione nel 2025.
+        - "Progettata e rilasciata l'automazione del patching degli hypervisor con rilocazione self-service delle VM, riducendo il drenaggio degli hypervisor da oltre 3,5 a 1,9 giorni (45,8% di risparmio) e accorciando le finestre di manutenzione per i team downstream; guidato il progetto multi-team end-to-end, negoziando SLA cross-team (4–24 ore) con organizzazioni partner."
+        - Progettato e sostituito il vecchio servizio di distribuzione dei template per le VM, riducendo la loro propagazione da 4–5 a 1–2 giorni (~60% più veloce), accelerando il rollout degli aggiornamenti e l'adozione di patch di sicurezza e liberando 27 TB sull'intero control plane di virtualizzazione globale alla prima esecuzione in produzione.
+        - In qualità di reliability champion del team, stabilizzato il framework utilizzato dal team per l'esecuzione di workflow, riducendo il tasso di OOM di oltre il 99,7%, abbattendo il carico sui turni di reperibilità, e ridotto i requisiti delle sue risorse del 40%.
     - role: Systems Development Area Leader
       company: Immobiliare.it S.p.A.
       from: 2021
@@ -63,9 +68,6 @@ education:
       - program: Laurea triennale in Informatica
         school: La Sapienza, Università di Roma
         date: 2019
-      - program: Diploma di liceo scientifico
-        school: L.S.S. Amedeo Avogadro
-        date: 2014
   research:
     label: Ricerca
     entries:
@@ -75,30 +77,10 @@ education:
         researchers:
           - Giacomo Casoni
         date: 2020
-      - title: "Agnostic embedding of digital signatures"
-        url: ""
-        oneliner: ""
-        researchers:
-          - Sean Liao
-        date: 2020
-      - title: "Audio Steganography: a Deep Learning Approach"
-        url: ""
-        oneliner: ""
-        researchers:
-          - Philippe Partarrieu
-        date: 2020
       - title: BGP Flow-Spec for distributed micro-segmentation
         url: "https://rp.os3.nl/2019-2020/p53/report.pdf"
         oneliner: "Adoption of BGP Flow Specification for distributing micro-segmentation policies in modern data centers"
         date: 2020
-      - title: "REVCON: Reverse Network Reconnaissance"
-        url: ""
-        oneliner: ""
-        researchers:
-          - Paul Dunn
-          - Philipp Mieden
-          - Axel Koolhaas
-        date: 2019
 
 projects:
   label: Progetti
@@ -122,7 +104,7 @@ programming:
         - Python
         - Bash
         - Go
-        - PHP/Hack
+        - Hack
         - Rust
     - category: Familiare
       entries:
@@ -130,14 +112,9 @@ programming:
         - Java
         - LaTeX
         - JavaScript/TypeScript
+        - PHP
         - Ruby
         - SQL
-    - category: AI/LLM
-      entries:
-        - Retrieval-Augmented Generation
-        - Workflow Agentici
-        - Inferenza LLM Strutturata
-        - Retrieval basato su Embedding
 
 languages:
   label: Lingue
@@ -145,7 +122,7 @@ languages:
     - name: Italiano
       proficiency: Madrelingua
     - name: Inglese
-      proficiency: C2 read, C1 listen, B2 speak, B2 write — certificato TOEFL iBT
+      proficiency: Conoscenza professionale — certificato TOEFL iBT
 
 misc:
   footnote: Autorizzo il trattamento dei miei dati personali ai sensi della legge sulla privacy 196/03 e successive modifiche e integrazioni

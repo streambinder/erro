@@ -9,6 +9,28 @@ from typing import Any
 import jinja2
 import yaml
 
+
+def latex_escape(value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    # order matters: backslash first, then chars that map to commands
+    replacements = [
+        ("\\", r"\textbackslash{}"),
+        ("&", r"\&"),
+        ("%", r"\%"),
+        ("$", r"\$"),
+        ("#", r"\#"),
+        ("_", r"\_"),
+        ("{", r"\{"),
+        ("}", r"\}"),
+        ("~", r"\textasciitilde{}"),
+        ("^", r"\textasciicircum{}"),
+    ]
+    for src, dst in replacements:
+        value = value.replace(src, dst)
+    return value
+
+
 j_envs = {
     "html": jinja2.Environment(
         block_start_string="<jblock",
@@ -46,6 +68,8 @@ j_envs = {
         loader=jinja2.FileSystemLoader(os.path.abspath(".")),
     ),
 }
+
+j_envs["tex"].filters["latex_escape"] = latex_escape
 
 
 def main() -> None:
