@@ -20,9 +20,9 @@ permissions:
   security-events: none
   statuses: none
 
-concurrency: # prevent concurrent tag/release
+concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   super-linter:
@@ -47,6 +47,9 @@ jobs:
           VALIDATE_PYTHON_BLACK: false
           VALIDATE_PYTHON_PYLINT: false
           IGNORE_GITIGNORED_FILES: true
+          SAVE_SUPER_LINTER_OUTPUT: false
+          MULTI_STATUS: false
+          LOG_LEVEL: WARN
   mypy:
     runs-on: ubuntu-latest
     steps:
