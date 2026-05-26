@@ -57,15 +57,11 @@ def latex_escape(value: Any) -> Any:
         # emph content was already escaped via the placeholder roundtrip — recover the original
         # then re-escape so nested markdown is preserved literally. simpler: re-run the same
         # pipeline recursively on the captured text (no link/emph inside emph supported here)
-        value = value.replace(
-            emph_placeholder, rf"\emph{{{_latex_escape_plain(content)}}}", 1
-        )
+        value = value.replace(emph_placeholder, rf"\emph{{{_latex_escape_plain(content)}}}", 1)
     for text, url in links:
         # url goes raw inside \href (hyperref handles its own escaping for URLs);
         # text is escaped, with nested *emph* recursively resolved
-        value = value.replace(
-            link_placeholder, rf"\href{{{url}}}{{{latex_escape(text)}}}", 1
-        )
+        value = value.replace(link_placeholder, rf"\href{{{url}}}{{{latex_escape(text)}}}", 1)
     return value
 
 
