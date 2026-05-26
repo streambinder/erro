@@ -32,13 +32,18 @@ work:
       from: 2021
       to: 2022
       description: >-
-        Orchestrated and managed software development oriented to systems and infrastructure.
+        Promoted to lead the Systems Development area, driving custom-built tooling and platforms tailored to the systems and infrastructure organization's needs.
+      highlights:
+        - "Designed and shipped [*inca*](https://github.com/immobiliare/inca), the company-wide internal CA and certificate-management platform — automating certificate flows across 3 datacenters, hundreds of internal services, and tens of public-facing ones, and consolidating the previously fragmented workflows behind one API, seamlessly integrated into infrastructure code via a dedicated Terraform provider for self-service lifecycle management; drove the open-source release of the project."
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 2020
-      to: 2022
+      to: 2021
       description: >-
-        Engineered and deployed infrastructures, wrote code to automate procedures and processes across networks and systems, and maintained them by realizing consistent and coherent monitoring systems.
+        Engineered and automated systems infrastructure, with consistent monitoring across the estate.
+      highlights:
+        - Initiated and led the migration of the configuration-management platform from SaltStack to Terraform + Ansible — hundreds of hosts and states in scope — and coauthored a shared Terraform module exposing a curated surface over the underlying Terraform and Ansible codebases, letting subteams own their deployment procedures without re-implementing them.
+        - Designed and shipped the company's first CI pipeline for infrastructure-as-code, spinning up sandboxed full-stack environments per PR (VM deploy → service exposure → pyunit assertions) across the full SaltStack codebase where no automated testing existed before.
     - role: Software Engineering Consultant
       company: Kubique S.p.A.
       from: 2018

@@ -32,13 +32,18 @@ work:
       from: 2021
       to: 2022
       description: >-
-        Ho orchestrato e gestito lo sviluppo di software orientati ai sistemi e alle infrastrutture.
+        Promosso per guidare l'area di Systems Development, realizzando tooling e piattaforme su misura per le esigenze dell'organizzazione di sistemi e infrastrutture.
+      highlights:
+        - "Progettato e rilasciato [*inca*](https://github.com/immobiliare/inca), la piattaforma aziendale di Certificate Authority interna — automatizzando i flussi su 3 datacenter, centinaia di servizi interni e decine pubblici, e consolidando i workflow precedentemente frammentati dietro un'unica API, con provider Terraform dedicato per la gestione self-service; promotore del rilascio open-source."
     - role: Site Reliability Engineer
       company: Immobiliare.it S.p.A.
       from: 2020
-      to: 2022
+      to: 2021
       description: >-
-        Ho progettato e realizzato infrastrutture di rete, scritto codice per automatizzare procedure e processi nelle reti e i sistemi amministrate, e li ho manutenuti realizzando sistemi di monitoraggio consistenti.
+        Ho progettato e automatizzato infrastrutture di sistemi, con monitoraggio consistente sull'intero parco.
+      highlights:
+        - Avviato e guidato la migrazione del configuration management da SaltStack a Terraform + Ansible — centinaia di host e state — e co-realizzato un modulo Terraform condiviso che espone una superficie curata sui codebase sottostanti, permettendo ai subteam di gestire i propri deployment in autonomia.
+        - Progettato e rilasciato la prima pipeline CI per l'infrastructure-as-code aziendale, con ambienti sandbox full-stack per PR (deploy VM → esposizione servizi → test pyunit) sull'intera codebase SaltStack.
     - role: Consulente Sviluppatore
       company: Kubique S.p.A.
       from: 2018

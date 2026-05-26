@@ -31,12 +31,12 @@
                         <jvar entry.company />
                     </i>
                     <br>
-                    <jvar entry.description />
+                    <jvar entry.description|html_emph />
                     <jblock if entry.highlights />
                     <ul>
                         <jblock for highlight in entry.highlights />
                         <li>
-                            <jvar highlight />
+                            <jvar highlight|html_emph />
                         </li>
                         <jblock endfor />
                     </ul>
@@ -127,7 +127,7 @@
                         <jvar entry.members|join(', ') />
                     </i>
                     <br>
-                    <jvar entry.description />
+                    <jvar entry.description|html_emph />
                 </td>
             </tr>
             <jblock endfor />
