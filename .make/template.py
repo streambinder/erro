@@ -10,7 +10,6 @@ from typing import Any
 import jinja2
 import yaml
 
-
 # matches *word* — used in YAML to mark emphasis without committing to a target syntax
 EMPH_PATTERN = re.compile(r"\*([^*\s][^*]*[^*\s]|[^*\s])\*")
 # matches [text](url) — markdown-style links; text may itself contain *emph*
