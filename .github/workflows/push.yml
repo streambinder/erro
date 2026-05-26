@@ -90,6 +90,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      tag: ${{ steps.date.outputs.today }}
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
@@ -163,4 +165,4 @@ jobs:
           token: ${{ secrets.REPOSITORY_DISPATCH_STREAMBINDER }}
           repository: streambinder/streambinder
           event-type: erro-sync
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "tag": "${{ needs.build.outputs.tag }}"}'
