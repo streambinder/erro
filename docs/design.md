@@ -30,8 +30,8 @@ latex = jinja2.Environment(
     variable_end_string='}'
 )
 
-latex.get_template('template.tex')
-    .render(author = 'streambinder')
+latex.get_template('template.tex') \
+    .stream(author='streambinder') \
     .dump('resume.tex')
 ```
 
@@ -105,3 +105,22 @@ author: streambinder in english
 ```yaml
 author: streambinder in italiano
 ```
+
+## Inline formatting in the database
+
+The YAML data source supports a tiny markdown-inspired subset that gets translated on the fly to whatever the target template renders:
+
+- `*word*` — emphasis. Becomes `\emph{word}` for LaTeX targets, `<em>word</em>` for HTML, plain `word` for text.
+- `[label](https://example.com)` — link. Becomes `\href{https://example.com}{label}` for LaTeX, `<a href="https://example.com">label</a>` for HTML, `label (https://example.com)` for text.
+
+LaTeX special characters in surrounding prose (`& % $ # _ { } ~ ^ \`) are escaped automatically before rendering, so the YAML stays portable across the LaTeX, HTML and plain-text outputs without per-target authoring.
+
+## Output formats
+
+Each language config is fanned out across three Jinja environments (`tex`, `html`, `txt`) with different delimiter sets, so the same data drives three distinct artifact families:
+
+- LaTeX → `personal_{en,it}.pdf`, `europass_{en,it}.pdf` (compiled via `pdflatex`).
+- HTML → `web_{en,it}.html` (used as the iframe target on `davidepucci.it/resume`).
+- Plain text → `plain_{en,it}.txt` (greppable, diffable, machine-friendly variant).
+
+All variants ship together as assets of a single GitHub Release; see [download](download.md) for the URL pattern.
