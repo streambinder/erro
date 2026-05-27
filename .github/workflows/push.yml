@@ -84,9 +84,26 @@ jobs:
           repository: streambinder/streambinder
           event-type: doc-sync
           client-payload: '{"repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
-  build:
+  changes:
     needs: [super-linter, mypy]
     if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    outputs:
+      src: ${{ steps.filter.outputs.src }}
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d
+        id: filter
+        with:
+          filters: |
+            src:
+              - 'src/**'
+  build:
+    needs: [changes]
+    if: needs.changes.outputs.src == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -155,7 +172,6 @@ jobs:
           fi
   notify-release:
     needs: [build]
-    if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     environment: streambinder-dispatch
     steps:
