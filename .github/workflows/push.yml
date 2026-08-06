@@ -60,6 +60,8 @@ jobs:
         with:
           version: 0.11.12
       - run: |
+          # --frozen installs the lock without checking it matches pyproject
+          uv lock --check
           uv sync --frozen
           uv run mypy --strict
   notify-doc:
